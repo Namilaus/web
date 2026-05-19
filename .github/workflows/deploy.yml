@@ -21,3 +21,15 @@ jobs:
                     push: true
                     tags: namialus/namialusweb-web:latest
 
+    deploy-it-on-vps:
+        runs-on: ubuntu-latest
+        steps:
+            -
+                name: rebuild and run the docker container
+                uses: appleboy/ssh-action@v1
+                with:
+                    host: ${{ secrets.HOST }}
+                    username: ${{ secrets.VPSUSERNAME }}
+                    password: ${{ secrets.VPSPASSWORD }}
+                    port: ${{ secrets.PORT }}
+                    script: whoami
