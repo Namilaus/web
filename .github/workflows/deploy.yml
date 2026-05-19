@@ -22,6 +22,7 @@ jobs:
                     tags: namialus/namialusweb-web:latest
 
     deploy-it-on-vps:
+        needs: build-and-push-image
         runs-on: ubuntu-latest
         steps:
             -
@@ -32,4 +33,8 @@ jobs:
                     username: ${{ secrets.VPSUSERNAME }}
                     password: ${{ secrets.VPSPASSWORD }}
                     port: ${{ secrets.PORT }}
-                    script: whoami
+                    script: |
+                        cd ~/web
+                        docker compose pull
+                        docker compose up
+
