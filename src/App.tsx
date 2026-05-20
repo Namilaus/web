@@ -4,7 +4,10 @@ function App() {
 
   return (
     <>
-      Hi World from Atayi Family!
+      <h1>
+        Sulaiman </h1>
+      <h2>Hi, I am Sulaiman</h2>
+      <h3>Software Engineering Student | Full-Stack Developer | Dual Study Program</h3>
     </>
   )
 }
