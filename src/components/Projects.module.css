@@ -1,0 +1,118 @@
+.projects {
+  position: relative;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, transparent 0%, var(--accent-bg) 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.label {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 20px;
+  font-size: var(--text-sm);
+  color: var(--accent-primary);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 800;
+  color: var(--text-h);
+  margin: 0 0 12px 0;
+  opacity: 0;
+
+  &.visible {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  margin: 0;
+  opacity: 0;
+
+  &.visible {
+    animation: slideInUp 0.6s ease-out 0.1s forwards;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+  opacity: 0;
+
+  &.visible {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+}
+
+.cta {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border-radius: 12px;
+  color: white;
+  opacity: 0;
+
+  &.visible {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+
+  p {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    margin: 0 0 16px 0;
+  }
+}
+
+.button {
+  padding: 12px 32px;
+  background: white;
+  color: var(--accent-primary);
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: var(--text-base);
+  cursor: pointer;
+  transition: all var(--transition-base);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    p {
+      font-size: var(--text-lg);
+    }
+  }
+}

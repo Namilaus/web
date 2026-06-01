@@ -1,0 +1,142 @@
+.skills {
+  position: relative;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, transparent 0%, var(--accent-bg) 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.label {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 20px;
+  font-size: var(--text-sm);
+  color: var(--accent-primary);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 800;
+  color: var(--text-h);
+  margin: 0;
+  opacity: 0;
+
+  &.visible {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+  opacity: 0;
+
+  &.visible {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+}
+
+.category {
+  padding: 32px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: all var(--transition-base);
+
+  &:hover {
+    background: var(--card-hover);
+    border-color: var(--accent-primary);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+
+    .categoryHeader {
+      color: var(--accent-primary);
+    }
+  }
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  transition: color var(--transition-base);
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--text-h);
+    margin: 0;
+  }
+}
+
+.icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.focus {
+  padding: 32px;
+  background: linear-gradient(135deg, var(--accent-bg) 0%, transparent 100%);
+  border: 1px solid var(--accent-border);
+  border-radius: 12px;
+  opacity: 0;
+
+  &.visible {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin: 0 0 12px 0;
+  }
+
+  p {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus {
+    h3 {
+      font-size: var(--text-lg);
+    }
+
+    p {
+      font-size: var(--text-base);
+    }
+  }
+}
