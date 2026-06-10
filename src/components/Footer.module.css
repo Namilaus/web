@@ -1,83 +1,69 @@
 .footer {
-  position: relative;
-  padding: 40px 20px;
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border);
-  margin-top: 80px;
+  border-top: 1px solid var(--line);
+  background: var(--bg-raised);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: var(--container);
   margin: 0 auto;
+  padding: 28px var(--gutter);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.credit {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
 
-  p {
-    font-size: var(--text-base);
-    color: var(--text-secondary);
-    margin: 0;
-
-    strong {
-      color: var(--text-h);
-      font-weight: 700;
-    }
-  }
+.credit strong {
+  color: var(--ink-dim);
+  font-weight: 500;
 }
 
 .copyright {
-  font-size: var(--text-sm);
-  color: var(--text-muted);
+  color: var(--ink-faint);
 }
 
 .links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-
-  a {
-    font-size: var(--text-base);
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: all var(--transition-fast);
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
-      transition: width var(--transition-fast);
-    }
-
-    &:hover {
-      color: var(--accent-primary);
-
-      &::after {
-        width: 100%;
-      }
-    }
-  }
+  gap: clamp(16px, 3vw, 32px);
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
+.links a {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink-dim);
+  transition: color var(--transition-fast);
+}
 
-  .links {
-    justify-content: center;
-  }
+.links a:hover {
+  color: var(--amber);
+}
+
+.toTop {
+  background: none;
+  border: none;
+  padding: 4px 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  transition: color var(--transition-fast);
+}
+
+.toTop:hover {
+  color: var(--amber);
 }

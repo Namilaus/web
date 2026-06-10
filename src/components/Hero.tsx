@@ -1,61 +1,94 @@
 import styles from './Hero.module.css';
 
+/* Nautical depth contours of an imagined Elbe chart — the hero's backdrop */
+const ChartLines = () => (
+  <svg
+    className={styles.chart}
+    viewBox="0 0 1440 900"
+    preserveAspectRatio="xMidYMid slice"
+    aria-hidden="true"
+  >
+    <g className={styles.chartGroupA}>
+      <path d="M -80 180 C 260 110, 480 300, 780 220 S 1240 340, 1540 250" />
+      <path d="M -80 290 C 280 210, 500 400, 800 320 S 1250 450, 1540 360" />
+      <path d="M -80 410 C 300 320, 520 510, 820 430 S 1260 560, 1540 470" />
+      <text x="356" y="232" className={styles.depth}>8</text>
+      <text x="912" y="352" className={styles.depth}>12</text>
+    </g>
+    <g className={styles.chartGroupB}>
+      <path d="M -80 540 C 320 440, 540 630, 840 550 S 1270 670, 1540 590" />
+      <path d="M -80 670 C 340 560, 560 760, 860 680 S 1280 790, 1540 710" />
+      <path d="M -80 800 C 360 690, 580 880, 880 800 S 1290 910, 1540 830" />
+      <text x="500" y="582" className={styles.depth}>16</text>
+      <text x="1080" y="724" className={styles.depth}>20</text>
+    </g>
+  </svg>
+);
+
 export const Hero = () => {
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section id="home" className={styles.hero}>
-      <div className={styles.background}>
-        <div className={styles.gradient1}></div>
-        <div className={styles.gradient2}></div>
-      </div>
+      <ChartLines />
 
       <div className={styles.container}>
-        <div className={styles.content}>
-          <div className={styles.topLabel}>
-            <span className={styles.badge}>Welcome to my portfolio</span>
-          </div>
+        <p className={styles.eyebrow}>
+          Port of Hamburg <span className={styles.eyebrowSep}>·</span>{' '}
+          <span className={styles.eyebrowCoords}>53.55° N / 9.99° E</span>
+        </p>
 
-          <h1 className={styles.title}>
-            <span className={styles.highlight}>Sulaiman Atayi</span>
-          </h1>
+        <h1 className={styles.title}>
+          <span className={styles.titleLine}>
+            <span className={styles.titleInner}>Sulaiman</span>
+          </span>
+          <span className={styles.titleLine}>
+            <span className={styles.titleInner}>
+              Atayi<span className={styles.titleMark}>.</span>
+            </span>
+          </span>
+        </h1>
 
-          <p className={styles.subtitle}>
-            Software Engineer | Backend Developer | Cloud Enthusiast
-          </p>
-
-          <p className={styles.description}>
-            I'm a software engineering student passionate about building scalable systems, automating workflows, and solving technical challenges. Based in Hamburg, Germany.
-          </p>
-
-          <div className={styles.cta}>
-            <button className={styles.primaryBtn} onClick={() => scrollToSection('projects')}>
-              View My Work
-            </button>
-            <button className={styles.secondaryBtn} onClick={() => scrollToSection('contact')}>
-              Get in Touch
-            </button>
-          </div>
-
-          <div className={styles.scroll}>
-            <span>Scroll to explore</span>
-            <div className={styles.scrollIcon}>↓</div>
-          </div>
+        <div className={styles.roles}>
+          <span>Software Engineer</span>
+          <span className={styles.roleSep} aria-hidden="true">/</span>
+          <span>Backend Developer</span>
+          <span className={styles.roleSep} aria-hidden="true">/</span>
+          <span>Cloud Enthusiast</span>
         </div>
 
-        <div className={styles.decorative}>
-          <div className={styles.floatingCard1}>
-            <div>Backend Dev</div>
-          </div>
-          <div className={styles.floatingCard2}>
-            <div>Cloud & AWS</div>
-          </div>
-          <div className={styles.floatingCard3}>
-            <div>Data Analytics</div>
-          </div>
+        <p className={styles.description}>
+          I'm a software engineering student passionate about building scalable systems,
+          automating workflows, and solving technical challenges. Based in Hamburg, Germany.
+        </p>
+
+        <div className={styles.cta}>
+          <button className={styles.primaryBtn} onClick={() => scrollToSection('projects')}>
+            View My Work
+          </button>
+          <button className={styles.secondaryBtn} onClick={() => scrollToSection('contact')}>
+            Get in Touch
+          </button>
+        </div>
+      </div>
+
+      <div className={styles.registry}>
+        <div className={styles.registryItem}>
+          <span className={styles.registryKey}>Cargo</span>
+          <span className={styles.registryValue}>Backend Dev · Cloud &amp; AWS · Data Analytics</span>
+        </div>
+        <div className={styles.registryItem}>
+          <span className={styles.registryKey}>Status</span>
+          <span className={styles.registryValue}>
+            <span className={styles.statusDot} aria-hidden="true" />
+            Open to new projects
+          </span>
+        </div>
+        <div className={styles.registryScroll}>
+          <span>Scroll to explore</span>
+          <span className={styles.scrollArrow} aria-hidden="true">↓</span>
         </div>
       </div>
     </section>

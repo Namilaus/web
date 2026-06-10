@@ -1,42 +1,35 @@
+import type { CSSProperties } from 'react';
 import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
   title: string;
   description: string;
   tech: string[];
+  index: number;
   delay?: number;
 }
 
-export const ProjectCard = ({ title, description, tech, delay = 0 }: ProjectCardProps) => {
+export const ProjectCard = ({ title, description, tech, index, delay = 0 }: ProjectCardProps) => {
   return (
-    <div
-      className={styles.card}
-      style={{
-        animation: `slideInUp 0.5s ease-out ${delay}ms backwards`,
-      }}
+    <article
+      className={styles.row}
+      style={{ '--entry-delay': `${delay}ms` } as CSSProperties}
     >
-      <div className={styles.cardContent}>
-        <div className={styles.cardHeader}>
-          <h3 className={styles.title}>{title}</h3>
-          <div className={styles.placeholder}>
-            <div className={styles.icon}>📌</div>
-          </div>
-        </div>
+      <span className={styles.index}>{String(index).padStart(2, '0')}</span>
 
+      <div className={styles.body}>
+        <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
-
-        <div className={styles.techStack}>
-          {tech.map((t, i) => (
-            <span key={i} className={styles.techBadge}>
-              {t}
-            </span>
-          ))}
-        </div>
-
-        <div className={styles.cta}>
-          <button className={styles.button}>View Project</button>
-        </div>
       </div>
-    </div>
+
+      <p className={styles.tech}>
+        {tech.map((t, i) => (
+          <span key={t}>
+            {t}
+            {i < tech.length - 1 && <span className={styles.techSep} aria-hidden="true"> · </span>}
+          </span>
+        ))}
+      </p>
+    </article>
   );
 };

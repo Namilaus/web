@@ -1,75 +1,65 @@
 .experience {
   position: relative;
-  padding: 80px 20px;
+  padding: var(--space-section) 0;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: var(--container);
   margin: 0 auto;
+  padding: 0 var(--gutter);
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: clamp(28px, 5vh, 48px);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0;
 }
 
-.label {
-  display: inline-block;
-  padding: 6px 12px;
-  background: var(--accent-bg);
-  border: 1px solid var(--accent-border);
-  border-radius: 20px;
-  font-size: var(--text-sm);
-  color: var(--accent-primary);
-  font-weight: 600;
-  margin-bottom: 12px;
+.record {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--amber);
 }
 
 .title {
-  font-size: clamp(32px, 6vw, 48px);
-  font-weight: 800;
-  color: var(--text-h);
-  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 850;
+  font-stretch: 118%;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 0.95;
+  font-size: var(--text-3xl);
+  color: var(--ink);
   opacity: 0;
-
-  &.visible {
-    animation: slideInUp 0.6s ease-out forwards;
-  }
+  transform: translateY(24px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-.timeline {
-  position: relative;
-  opacity: 0;
-
-  &.visible {
-    animation: slideInUp 0.6s ease-out forwards;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(
-      180deg,
-      var(--accent-primary) 0%,
-      var(--accent-secondary) 50%,
-      transparent 100%
-    );
-    transform: translateX(-50%);
-  }
+.visible .title {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .experience {
-    padding: 60px 20px;
-  }
+.logbook {
+  display: flex;
+  flex-direction: column;
+}
 
-  .timeline {
-    &::before {
-      display: none;
-    }
-  }
+/* Reveal handled per entry inside TimelineItem via inherited visibility */
+.logbook > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  transition-delay: var(--entry-delay, 0ms);
+}
+
+.visible .logbook > * {
+  opacity: 1;
+  transform: translateY(0);
 }

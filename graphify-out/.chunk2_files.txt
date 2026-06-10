@@ -1,0 +1,8 @@
+C:\Users\sulai\Desktop\Projekts\web\namialusweb\.github\workflows\deploy.yml
+C:\Users\sulai\Desktop\Projekts\web\namialusweb\ARCHITECTURE.md
+C:\Users\sulai\Desktop\Projekts\web\namialusweb\PORTFOLIO_GUIDE.md
+C:\Users\sulai\Desktop\Projekts\web\namialusweb\README.md
+C:\Users\sulai\Desktop\Projekts\web\namialusweb\docker-compose.yaml
+C:\Users\sulai\Desktop\Projekts\web\namialusweb\index.html
+C:\Users\sulai\Desktop\Projekts\web\namialusweb\public\favicon.svg
+C:\Users\sulai\Desktop\Projekts\web\namialusweb\public\icons.svg

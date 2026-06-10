@@ -1,118 +1,111 @@
 .projects {
   position: relative;
-  padding: 80px 20px;
-  background: linear-gradient(180deg, transparent 0%, var(--accent-bg) 100%);
+  padding: var(--space-section) 0;
+  background: var(--bg-raised);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: var(--container);
   margin: 0 auto;
+  padding: 0 var(--gutter);
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: clamp(28px, 5vh, 48px);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0;
 }
 
-.label {
-  display: inline-block;
-  padding: 6px 12px;
-  background: var(--accent-bg);
-  border: 1px solid var(--accent-border);
-  border-radius: 20px;
-  font-size: var(--text-sm);
-  color: var(--accent-primary);
-  font-weight: 600;
-  margin-bottom: 12px;
+.record {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--amber);
 }
 
 .title {
-  font-size: clamp(32px, 6vw, 48px);
-  font-weight: 800;
-  color: var(--text-h);
-  margin: 0 0 12px 0;
+  font-family: var(--font-display);
+  font-weight: 850;
+  font-stretch: 118%;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 0.95;
+  font-size: var(--text-3xl);
+  color: var(--ink);
   opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
 
-  &.visible {
-    animation: slideInUp 0.6s ease-out forwards;
-  }
+.visible .title {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .subtitle {
-  font-size: var(--text-lg);
-  color: var(--text-secondary);
-  margin: 0;
-  opacity: 0;
-
-  &.visible {
-    animation: slideInUp 0.6s ease-out 0.1s forwards;
-  }
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  margin-bottom: 60px;
-  opacity: 0;
+/* --- Ledger --- */
 
-  &.visible {
-    animation: slideInUp 0.6s ease-out forwards;
-  }
+.ledger {
+  display: flex;
+  flex-direction: column;
 }
+
+.ledger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  transition-delay: var(--entry-delay, 0ms);
+}
+
+.visible .ledger > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- CTA --- */
 
 .cta {
-  text-align: center;
-  padding: 40px;
-  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
-  border-radius: 12px;
-  color: white;
-  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: clamp(32px, 5vh, 52px);
+}
 
-  &.visible {
-    animation: slideInUp 0.6s ease-out forwards;
-  }
-
-  p {
-    font-size: var(--text-xl);
-    font-weight: 700;
-    margin: 0 0 16px 0;
-  }
+.ctaText {
+  font-size: var(--text-lg);
+  color: var(--ink-dim);
 }
 
 .button {
-  padding: 12px 32px;
-  background: white;
-  color: var(--accent-primary);
-  border: none;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: var(--text-base);
-  cursor: pointer;
-  transition: all var(--transition-base);
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  &:active {
-    transform: translateY(-2px);
-  }
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 2px;
+  background: var(--amber);
+  color: var(--bg);
+  border: 1px solid var(--amber);
+  transition: transform var(--transition-fast);
 }
 
-@media (max-width: 768px) {
-  .projects {
-    padding: 60px 20px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta {
-    p {
-      font-size: var(--text-lg);
-    }
-  }
+.button:hover {
+  transform: translateY(-2px);
 }

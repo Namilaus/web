@@ -2,75 +2,68 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { SkillBadge } from './common/SkillBadge';
 import styles from './Skills.module.css';
 
+const skillCategories = [
+  {
+    code: 'BCK',
+    title: 'Backend Development',
+    skills: ['JavaScript', 'Node.js', 'Next.js', 'REST APIs', 'Backend Development'],
+  },
+  {
+    code: 'CLD',
+    title: 'Cloud & Infrastructure',
+    skills: [
+      'Amazon Web Services (AWS)',
+      'IT Infrastructure',
+      'System Configuration',
+      'Networking',
+      'System Optimization',
+    ],
+  },
+  {
+    code: 'DAT',
+    title: 'Data & Analytics',
+    skills: ['Power BI', 'Dashboard Automation', 'Data Visualization', 'Data Analysis', 'Database Design'],
+  },
+  {
+    code: 'ENG',
+    title: 'Software Engineering',
+    skills: ['Software Architecture', 'Problem Solving', 'Technical Analysis', 'Agile Collaboration', 'Debugging'],
+  },
+];
+
 export const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
 
-  const skillCategories = [
-    {
-      title: 'Backend Development',
-      icon: '⚙️',
-      skills: ['JavaScript', 'Node.js', 'Next.js', 'REST APIs', 'Backend Development'],
-    },
-    {
-      title: 'Cloud & Infrastructure',
-      icon: '☁️',
-      skills: ['Amazon Web Services (AWS)', 'IT Infrastructure', 'System Configuration', 'Networking', 'System Optimization'],
-    },
-    {
-      title: 'Data & Analytics',
-      icon: '📊',
-      skills: ['Power BI', 'Dashboard Automation', 'Data Visualization', 'Data Analysis', 'Database Design'],
-    },
-    {
-      title: 'Software Engineering',
-      icon: '🔬',
-      skills: ['Software Architecture', 'Problem Solving', 'Technical Analysis', 'Agile Collaboration', 'Debugging'],
-    },
-  ];
-
   return (
     <section ref={ref} id="skills" className={styles.skills}>
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <span className={styles.label}>What I Know</span>
-          <h2 className={`${styles.title} ${isVisible ? styles.visible : ''}`}>
-            Technical Skills
-          </h2>
-        </div>
+      <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
+        <header className={styles.header}>
+          <span className={styles.record}>Rec 02 — What I Know</span>
+          <h2 className={styles.title}>Technical Skills</h2>
+        </header>
 
-        <div className={`${styles.grid} ${isVisible ? styles.visible : ''}`}>
-          {skillCategories.map((category, categoryIndex) => (
-            <div
-              key={categoryIndex}
-              className={styles.category}
-              style={{
-                animation: `slideInUp 0.6s ease-out ${categoryIndex * 100}ms backwards`,
-              }}
-            >
-              <div className={styles.categoryHeader}>
-                <span className={styles.icon}>{category.icon}</span>
-                <h3>{category.title}</h3>
-              </div>
-
+        <div className={styles.manifest}>
+          {skillCategories.map((category, i) => (
+            <div key={category.code} className={styles.row} style={{ transitionDelay: `${i * 110}ms` }}>
+              <span className={styles.code}>{category.code}</span>
+              <h3 className={styles.category}>{category.title}</h3>
               <div className={styles.skillList}>
-                {category.skills.map((skill, skillIndex) => (
-                  <SkillBadge
-                    key={skillIndex}
-                    name={skill}
-                    delay={categoryIndex * 100 + skillIndex * 50}
-                  />
+                {category.skills.map((skill) => (
+                  <SkillBadge key={skill} name={skill} />
                 ))}
               </div>
             </div>
           ))}
         </div>
 
-        <div className={`${styles.focus} ${isVisible ? styles.visible : ''}`}>
-          <h3>Current Focus</h3>
-          <p>
-            I'm particularly interested in backend systems, cloud technologies, automation, and data engineering. I enjoy combining software engineering principles with business understanding to build scalable, efficient solutions.
+        <aside className={styles.focus}>
+          <span className={styles.focusLabel}>Current Focus</span>
+          <p className={styles.focusText}>
+            I'm particularly interested in backend systems, cloud technologies, automation, and
+            data engineering. I enjoy combining software engineering principles with business
+            understanding to build scalable, efficient solutions.
           </p>
-        </div>
+        </aside>
       </div>
     </section>
   );

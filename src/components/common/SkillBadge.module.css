@@ -1,31 +1,17 @@
 .badge {
   display: inline-block;
-  padding: 8px 16px;
-  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
-  color: white;
-  border-radius: 20px;
-  font-size: var(--text-sm);
-  font-weight: 600;
-  transition: all var(--transition-base);
-  cursor: default;
-  position: relative;
-  overflow: hidden;
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  color: var(--ink-dim);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent-primary) 100%);
-    opacity: 0;
-    transition: opacity var(--transition-base);
-  }
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(131, 102, 255, 0.4);
-
-    &::before {
-      opacity: 1;
-    }
-  }
+.badge:hover {
+  color: var(--amber);
+  border-color: var(--amber);
 }

@@ -1,0 +1,152 @@
+{
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\eslint.config.js": {
+    "mtime": 1779138327.0715117,
+    "ast_hash": "0355276bc79439afe3c53e3a2470ca1e",
+    "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\package.json": {
+    "mtime": 1779274098.6875598,
+    "ast_hash": "f3a7f64e4c88265322fd4c3670f569f7",
+    "semantic_hash": "f3a7f64e4c88265322fd4c3670f569f7"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\App.tsx": {
+    "mtime": 1780655970.334737,
+    "ast_hash": "e96391a77895c95df55bde6c77012a03",
+    "semantic_hash": "e96391a77895c95df55bde6c77012a03"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\About.tsx": {
+    "mtime": 1780774240.888986,
+    "ast_hash": "b1c714dcca450e9096ad7730d3c9b2de",
+    "semantic_hash": "b1c714dcca450e9096ad7730d3c9b2de"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\Contact.tsx": {
+    "mtime": 1780655970.342732,
+    "ast_hash": "29172f91278db1226b55c0f0a87abfb6",
+    "semantic_hash": "29172f91278db1226b55c0f0a87abfb6"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\Experience.tsx": {
+    "mtime": 1780655970.3447378,
+    "ast_hash": "8e4ebdd571723b3eb297b22a8831c623",
+    "semantic_hash": "8e4ebdd571723b3eb297b22a8831c623"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\Footer.tsx": {
+    "mtime": 1780655970.3479989,
+    "ast_hash": "c8d901ce0c22e3917ddeeb9bac046cab",
+    "semantic_hash": "c8d901ce0c22e3917ddeeb9bac046cab"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\Hero.tsx": {
+    "mtime": 1780655970.349995,
+    "ast_hash": "3dab4c0e8f3a2a25df06c5400d668a73",
+    "semantic_hash": "3dab4c0e8f3a2a25df06c5400d668a73"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\Navigation.tsx": {
+    "mtime": 1780655970.3526034,
+    "ast_hash": "0b3a4a3bd071d7f62837a78aec28b5a4",
+    "semantic_hash": "0b3a4a3bd071d7f62837a78aec28b5a4"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\Projects.tsx": {
+    "mtime": 1780655970.354787,
+    "ast_hash": "c4bae8c9b31df9edb75644003f159423",
+    "semantic_hash": "c4bae8c9b31df9edb75644003f159423"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\Skills.tsx": {
+    "mtime": 1780655970.3571596,
+    "ast_hash": "12635cf5b1b9f3ef4ec24845e21f752e",
+    "semantic_hash": "12635cf5b1b9f3ef4ec24845e21f752e"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\common\\ProjectCard.tsx": {
+    "mtime": 1780655970.3601863,
+    "ast_hash": "1ddf1c4110170527dbdb4b36c6d3fab3",
+    "semantic_hash": "1ddf1c4110170527dbdb4b36c6d3fab3"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\common\\SkillBadge.tsx": {
+    "mtime": 1780655970.3611658,
+    "ast_hash": "61cbf6086e5e59abee6900af0e947853",
+    "semantic_hash": "61cbf6086e5e59abee6900af0e947853"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\components\\common\\TimelineItem.tsx": {
+    "mtime": 1780655970.363166,
+    "ast_hash": "12f2ef4276e0f301bb5775f2bd6e3c5d",
+    "semantic_hash": "12f2ef4276e0f301bb5775f2bd6e3c5d"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\hooks\\useScrollAnimation.ts": {
+    "mtime": 1780655970.3651671,
+    "ast_hash": "8bfed8e310d6b61a4f8203f1fc77b53c",
+    "semantic_hash": "8bfed8e310d6b61a4f8203f1fc77b53c"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\hooks\\useTheme.ts": {
+    "mtime": 1780655970.3651671,
+    "ast_hash": "7af91e4722ab60751a5103bd68276dae",
+    "semantic_hash": "7af91e4722ab60751a5103bd68276dae"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\main.tsx": {
+    "mtime": 1779274098.6895616,
+    "ast_hash": "df3369963799e47ef5a77cdca932abf0",
+    "semantic_hash": "df3369963799e47ef5a77cdca932abf0"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\src\\utils\\classNames.ts": {
+    "mtime": 1780655970.367166,
+    "ast_hash": "6f089fcf5ae165055c265a62fe5efe20",
+    "semantic_hash": "6f089fcf5ae165055c265a62fe5efe20"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\tsconfig.app.json": {
+    "mtime": 1779138327.1366696,
+    "ast_hash": "136630b5accce1ca50663df229534a26",
+    "semantic_hash": "136630b5accce1ca50663df229534a26"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\tsconfig.json": {
+    "mtime": 1779138327.1545398,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\tsconfig.node.json": {
+    "mtime": 1779138327.1625433,
+    "ast_hash": "70bdd0a673bcfc0e828080b306e7c680",
+    "semantic_hash": "70bdd0a673bcfc0e828080b306e7c680"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\vite.config.ts": {
+    "mtime": 1779216862.5361717,
+    "ast_hash": "32f43169f1dc3783381c2b2695096e93",
+    "semantic_hash": "32f43169f1dc3783381c2b2695096e93"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\.github\\workflows\\deploy.yml": {
+    "mtime": 1780656288.8178823,
+    "ast_hash": "962ccd112945af2621ba4242f0bf5693",
+    "semantic_hash": "962ccd112945af2621ba4242f0bf5693"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\ARCHITECTURE.md": {
+    "mtime": 1780655970.329732,
+    "ast_hash": "c8990b4ba0ebb7845c2e543b4aa106a8",
+    "semantic_hash": "c8990b4ba0ebb7845c2e543b4aa106a8"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\PORTFOLIO_GUIDE.md": {
+    "mtime": 1780655970.3307319,
+    "ast_hash": "204907d89b22c87faa3b1c2f812a426e",
+    "semantic_hash": "204907d89b22c87faa3b1c2f812a426e"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\README.md": {
+    "mtime": 1779138601.6917715,
+    "ast_hash": "f01d22bb09e391328eadcbf3c4d4cd04",
+    "semantic_hash": "f01d22bb09e391328eadcbf3c4d4cd04"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\docker-compose.yaml": {
+    "mtime": 1779276665.7804556,
+    "ast_hash": "dbc42f631fbd9e670a2e8305bad3a06e",
+    "semantic_hash": "dbc42f631fbd9e670a2e8305bad3a06e"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\index.html": {
+    "mtime": 1780655970.3327317,
+    "ast_hash": "6ca91d7b2a88ba60bae832efcb29e989",
+    "semantic_hash": "6ca91d7b2a88ba60bae832efcb29e989"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\public\\favicon.svg": {
+    "mtime": 1779138327.275172,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": "7e840862161341271697daa99a40d76b"
+  },
+  "C:\\Users\\sulai\\Desktop\\Projekts\\web\\namialusweb\\public\\icons.svg": {
+    "mtime": 1779138327.3200893,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  }
+}

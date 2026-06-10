@@ -18,17 +18,23 @@ export const useScrollAnimation = () => {
       }
     );
 
-    const currentRef = ref.current;
-    if (currentRef) {
-      observer.observe(currentRef);
+    if (ref.current) {
+      observer.observe(ref.current);
+      
+      // Check if element is already in viewport on mount
+      const rect = ref.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        setIsVisible(true);
+        observer.unobserve(ref.current);
+      }
     }
 
     return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
+      if (ref.current) {
+        observer.unobserve(ref.current);
       }
     };
-  }, []);
+  }, [ref]);
 
   return { ref, isVisible };
 };
