@@ -3,7 +3,7 @@ import styles from './Contact.module.css';
 
 const socialLinks = [
   { label: 'LinkedIn', url: 'https://linkedin.com/in/sulaiman-atayi-589b73328' },
-  { label: 'GitHub', url: 'https://github.com' },
+  { label: 'GitHub', url: 'https://github.com/Namilaus' },
 ];
 
 export const Contact = () => {
