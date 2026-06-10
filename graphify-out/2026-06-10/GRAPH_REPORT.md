@@ -1,12 +1,18 @@
-# Graph Report - .  (2026-06-06)
+# Graph Report - namialusweb  (2026-06-10)
 
 ## Corpus Check
-- Corpus is ~5,283 words - fits in a single context window. You may not need a graph.
+- 31 files · ~78,129 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 168 nodes · 184 edges · 22 communities (11 shown, 11 thin omitted)
-- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.84)
+- 251 nodes · 271 edges · 30 communities (14 shown, 16 thin omitted)
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `d1675f40`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Reusable Component Library|Reusable Component Library]]
@@ -30,30 +36,38 @@
 - [[_COMMUNITY_Social Profile Icon|Social Profile Icon]]
 - [[_COMMUNITY_Icons Sprite|Icons Sprite]]
 - [[_COMMUNITY_XTwitter Icon|X/Twitter Icon]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
 2. `compilerOptions` - 16 edges
-3. `useScrollAnimation()` - 11 edges
-4. `App Component` - 10 edges
-5. `useScrollAnimation Custom Hook` - 6 edges
-6. `scripts` - 5 edges
-7. `useTheme()` - 5 edges
-8. `useScrollAnimation Hook` - 5 edges
-9. `Animation System Keyframes` - 5 edges
-10. `build-and-push-image Job` - 4 edges
+3. `🚀 Portfolio Website - Build Complete!` - 13 edges
+4. `useScrollAnimation()` - 11 edges
+5. `Portfolio Website - Component Architecture` - 10 edges
+6. `App Component` - 10 edges
+7. `Animation System` - 8 edges
+8. `useScrollAnimation` - 7 edges
+9. `Frontend Design` - 6 edges
+10. `Responsive Behavior` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Favicon Link` --references--> `Purple Gradient Logo Icon`  [EXTRACTED]
   index.html → public/favicon.svg
+- `Key Animations Reference` --cites--> `Animation System`  [EXTRACTED]
+  PORTFOLIO_GUIDE.md → ARCHITECTURE.md
+- `📱 Responsive Breakpoints` --cites--> `Responsive Behavior`  [EXTRACTED]
+  PORTFOLIO_GUIDE.md → ARCHITECTURE.md
 - `Navigation Component` --implements--> `React Root Entry Point`  [INFERRED]
   ARCHITECTURE.md → index.html
-- `Key Animations Reference` --cites--> `Animation System Keyframes`  [EXTRACTED]
-  PORTFOLIO_GUIDE.md → ARCHITECTURE.md
 - `Build and push Docker image Step` --references--> `Docker Compose Web Service`  [INFERRED]
   .github/workflows/deploy.yml → docker-compose.yaml
-- `Portfolio Features Implemented` --cites--> `Component Tree Structure`  [EXTRACTED]
-  PORTFOLIO_GUIDE.md → ARCHITECTURE.md
 
 ## Import Cycles
 - None detected.
@@ -65,15 +79,15 @@
 - **CI/CD Deployment Pipeline** — workflows_deploy_build_and_push_image, workflows_deploy_deploy_it_on_vps, docker_compose_service_web [EXTRACTED 1.00]
 - **Social Media Icons Sprite** — icons_github_icon, icons_x_icon, icons_discord_icon, icons_bluesky_icon [EXTRACTED 1.00]
 
-## Communities (22 total, 11 thin omitted)
+## Communities (30 total, 16 thin omitted)
 
 ### Community 0 - "Reusable Component Library"
-Cohesion: 0.12
-Nodes (17): ProjectCard(), ProjectCardProps, SkillBadge(), SkillBadgeProps, TimelineItem(), TimelineItemProps, About(), Contact() (+9 more)
+Cohesion: 0.10
+Nodes (23): ProjectCard(), ProjectCardProps, SkillBadge(), SkillBadgeProps, TimelineItem(), TimelineItemProps, About(), highlights (+15 more)
 
 ### Community 1 - "React Dependencies"
-Cohesion: 0.08
-Nodes (24): dependencies, react, react-dom, devDependencies, @babel/core, babel-plugin-react-compiler, eslint, @eslint/js (+16 more)
+Cohesion: 0.11
+Nodes (18): devDependencies, @babel/core, babel-plugin-react-compiler, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, globals (+10 more)
 
 ### Community 2 - "Build & Lint Config"
 Cohesion: 0.09
@@ -88,39 +102,55 @@ Cohesion: 0.18
 Nodes (15): About Component, App Component, Contact Component, Experience Component, Footer Component, Hero Component, Main Entry Point, Navigation Component (+7 more)
 
 ### Community 5 - "Component Documentation"
-Cohesion: 0.16
-Nodes (14): About Component, Animation System Keyframes, Contact Component, Experience Component with Timeline, Performance Optimizations, ProjectCard Reusable Component, Projects Component, Responsive Design Behavior (+6 more)
+Cohesion: 0.08
+Nodes (29): About Component, Animation Delays, Animation System, classNames, Contact Component, CSS Modules Structure, Data Flow, Desktop (1200px+) (+21 more)
 
 ### Community 6 - "Design System & Tokens"
-Cohesion: 0.20
-Nodes (10): App.tsx Root Component, CSS Modules Architecture, Global Design Tokens, Navigation Component, useTheme Custom Hook, Purple Gradient Logo Icon, Favicon Link, HTML Head with SEO Meta Tags (+2 more)
+Cohesion: 0.15
+Nodes (13): App.tsx Root Component, CSS Modules Architecture, Custom Hooks, Global Design Tokens, Navigation Component, useTheme, Purple Gradient Logo Icon, Favicon Link (+5 more)
 
 ### Community 7 - "Docker Deployment"
 Cohesion: 0.22
 Nodes (9): Port Mapping 2000:80, Docker Compose Web Service, Volume Mounting Configuration, build-and-push-image Job, Build and push Docker image Step, Checkout code Step, deploy-it-on-vps Job, Login to Docker Hub Step (+1 more)
 
 ### Community 8 - "Package Scripts"
-Cohesion: 0.40
-Nodes (5): scripts, build, dev, lint, preview
+Cohesion: 0.13
+Nodes (14): dependencies, react, react-dom, @react-three/fiber, three, name, private, scripts (+6 more)
 
 ### Community 9 - "Project Features"
-Cohesion: 0.67
-Nodes (3): Component Tree Structure, Portfolio Features Implemented, Tech Stack
+Cohesion: 0.10
+Nodes (19): Component Tree, Build, 🚢 Deployment, Development, Docker, Portfolio Features Implemented, ✨ Features Implemented, 🚀 Getting Started (+11 more)
+
+### Community 22 - "Community 22"
+Cohesion: 0.25
+Nodes (7): computedHash, skillPath, source, sourceType, skills, frontend-design, version
+
+### Community 23 - "Community 23"
+Cohesion: 0.29
+Nodes (6): Design principles, Frontend Design, Ground it in the subject, More on writing in design, Process: brainstorm, explore, plan, critique, build, critique again, Restraint and self-critique
+
+### Community 28 - "Community 28"
+Cohesion: 0.33
+Nodes (6): HarborWater, Hero(), RetroTerminal, useTerminalEnabled(), useWaterEnabled(), usePointerParallax()
 
 ## Knowledge Gaps
-- **96 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+91 more)
+- **146 isolated node(s):** `PreToolUse`, `name`, `private`, `version`, `type` (+141 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `name`, `private`, `version` to the rest of the system?**
-  _96 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `🚀 Portfolio Website - Build Complete!` connect `Project Features` to `Component Documentation`, `Design System & Tokens`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+- **Why does `Portfolio Website - Component Architecture` connect `Component Documentation` to `Project Features`, `Design System & Tokens`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **What connects `PreToolUse`, `name`, `private` to the rest of the system?**
+  _146 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Reusable Component Library` be split into smaller, more focused modules?**
-  _Cohesion score 0.12298387096774194 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09759759759759759 - nodes in this community are weakly interconnected._
 - **Should `React Dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `Build & Lint Config` be split into smaller, more focused modules?**
   _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
 - **Should `TypeScript Node Config` be split into smaller, more focused modules?**

@@ -78,6 +78,33 @@
   },
   "nodes": [
     {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L1",
+      "id": "claude_settings",
+      "community": 24,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "id": "claude_settings_hooks",
+      "community": 24,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "PreToolUse",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "id": "claude_settings_hooks_pretooluse",
+      "community": 24,
+      "norm_label": "pretooluse"
+    },
+    {
       "label": "eslint.config.js",
       "file_type": "code",
       "source_file": "eslint.config.js",
@@ -92,7 +119,7 @@
       "source_file": "package.json",
       "source_location": "L1",
       "id": "package",
-      "community": 1,
+      "community": 8,
       "norm_label": "package.json"
     },
     {
@@ -101,7 +128,7 @@
       "source_file": "package.json",
       "source_location": "L2",
       "id": "package_name",
-      "community": 1,
+      "community": 8,
       "norm_label": "name"
     },
     {
@@ -110,7 +137,7 @@
       "source_file": "package.json",
       "source_location": "L3",
       "id": "package_private",
-      "community": 1,
+      "community": 8,
       "norm_label": "private"
     },
     {
@@ -119,7 +146,7 @@
       "source_file": "package.json",
       "source_location": "L4",
       "id": "package_version",
-      "community": 1,
+      "community": 8,
       "norm_label": "version"
     },
     {
@@ -128,7 +155,7 @@
       "source_file": "package.json",
       "source_location": "L5",
       "id": "package_type",
-      "community": 1,
+      "community": 8,
       "norm_label": "type"
     },
     {
@@ -182,32 +209,50 @@
       "source_file": "package.json",
       "source_location": "L12",
       "id": "package_dependencies",
-      "community": 1,
+      "community": 8,
       "norm_label": "dependencies"
+    },
+    {
+      "label": "@react-three/fiber",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "id": "package_dependencies_react_three_fiber",
+      "community": 8,
+      "norm_label": "@react-three/fiber"
     },
     {
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "package_dependencies_react",
-      "community": 1,
+      "community": 8,
       "norm_label": "react"
     },
     {
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L14",
+      "source_location": "L15",
       "id": "package_dependencies_react_dom",
-      "community": 1,
+      "community": 8,
       "norm_label": "react-dom"
+    },
+    {
+      "label": "three",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "package_dependencies_three",
+      "community": 8,
+      "norm_label": "three"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L18",
       "id": "package_devdependencies",
       "community": 1,
       "norm_label": "devdependencies"
@@ -216,7 +261,7 @@
       "label": "@babel/core",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L19",
       "id": "package_devdependencies_babel_core",
       "community": 1,
       "norm_label": "@babel/core"
@@ -225,7 +270,7 @@
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "package_devdependencies_eslint_js",
       "community": 1,
       "norm_label": "@eslint/js"
@@ -234,7 +279,7 @@
       "label": "@rolldown/plugin-babel",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L21",
       "id": "package_devdependencies_rolldown_plugin_babel",
       "community": 1,
       "norm_label": "@rolldown/plugin-babel"
@@ -243,7 +288,7 @@
       "label": "@types/babel__core",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L22",
       "id": "package_devdependencies_types_babel_core",
       "community": 1,
       "norm_label": "@types/babel__core"
@@ -252,7 +297,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L23",
       "id": "package_devdependencies_types_node",
       "community": 1,
       "norm_label": "@types/node"
@@ -261,7 +306,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L24",
       "id": "package_devdependencies_types_react",
       "community": 1,
       "norm_label": "@types/react"
@@ -270,16 +315,25 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L25",
       "id": "package_devdependencies_types_react_dom",
       "community": 1,
       "norm_label": "@types/react-dom"
     },
     {
+      "label": "@types/three",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "id": "package_devdependencies_types_three",
+      "community": 1,
+      "norm_label": "@types/three"
+    },
+    {
       "label": "@vitejs/plugin-react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L27",
       "id": "package_devdependencies_vitejs_plugin_react",
       "community": 1,
       "norm_label": "@vitejs/plugin-react"
@@ -288,7 +342,7 @@
       "label": "babel-plugin-react-compiler",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L28",
       "id": "package_devdependencies_babel_plugin_react_compiler",
       "community": 1,
       "norm_label": "babel-plugin-react-compiler"
@@ -297,7 +351,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L29",
       "id": "package_devdependencies_eslint",
       "community": 1,
       "norm_label": "eslint"
@@ -306,7 +360,7 @@
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L30",
       "id": "package_devdependencies_eslint_plugin_react_hooks",
       "community": 1,
       "norm_label": "eslint-plugin-react-hooks"
@@ -315,7 +369,7 @@
       "label": "eslint-plugin-react-refresh",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L31",
       "id": "package_devdependencies_eslint_plugin_react_refresh",
       "community": 1,
       "norm_label": "eslint-plugin-react-refresh"
@@ -324,7 +378,7 @@
       "label": "globals",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L32",
       "id": "package_devdependencies_globals",
       "community": 1,
       "norm_label": "globals"
@@ -333,7 +387,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L33",
       "id": "package_devdependencies_typescript",
       "community": 1,
       "norm_label": "typescript"
@@ -342,7 +396,7 @@
       "label": "typescript-eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L34",
       "id": "package_devdependencies_typescript_eslint",
       "community": 1,
       "norm_label": "typescript-eslint"
@@ -351,10 +405,82 @@
       "label": "vite",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L35",
       "id": "package_devdependencies_vite",
       "community": 1,
       "norm_label": "vite"
+    },
+    {
+      "label": "skills-lock.json",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L1",
+      "id": "skills_lock",
+      "community": 22,
+      "norm_label": "skills-lock.json"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L2",
+      "id": "skills_lock_version",
+      "community": 22,
+      "norm_label": "version"
+    },
+    {
+      "label": "skills",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L3",
+      "id": "skills_lock_skills",
+      "community": 22,
+      "norm_label": "skills"
+    },
+    {
+      "label": "frontend-design",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L4",
+      "id": "skills_lock_skills_frontend_design",
+      "community": 22,
+      "norm_label": "frontend-design"
+    },
+    {
+      "label": "source",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L5",
+      "id": "skills_lock_frontend_design_source",
+      "community": 22,
+      "norm_label": "source"
+    },
+    {
+      "label": "sourceType",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L6",
+      "id": "skills_lock_frontend_design_sourcetype",
+      "community": 22,
+      "norm_label": "sourcetype"
+    },
+    {
+      "label": "skillPath",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L7",
+      "id": "skills_lock_frontend_design_skillpath",
+      "community": 22,
+      "norm_label": "skillpath"
+    },
+    {
+      "label": "computedHash",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L8",
+      "id": "skills_lock_frontend_design_computedhash",
+      "community": 22,
+      "norm_label": "computedhash"
     },
     {
       "label": "App.tsx",
@@ -384,10 +510,28 @@
       "norm_label": "about.tsx"
     },
     {
-      "label": "About()",
+      "label": "traits",
       "file_type": "code",
       "source_file": "src/components/About.tsx",
       "source_location": "L4",
+      "id": "components_about_traits",
+      "community": 0,
+      "norm_label": "traits"
+    },
+    {
+      "label": "highlights",
+      "file_type": "code",
+      "source_file": "src/components/About.tsx",
+      "source_location": "L11",
+      "id": "components_about_highlights",
+      "community": 0,
+      "norm_label": "highlights"
+    },
+    {
+      "label": "About()",
+      "file_type": "code",
+      "source_file": "src/components/About.tsx",
+      "source_location": "L17",
       "id": "components_about_about",
       "community": 0,
       "norm_label": "about()"
@@ -402,10 +546,19 @@
       "norm_label": "contact.tsx"
     },
     {
-      "label": "Contact()",
+      "label": "socialLinks",
       "file_type": "code",
       "source_file": "src/components/Contact.tsx",
       "source_location": "L4",
+      "id": "components_contact_sociallinks",
+      "community": 0,
+      "norm_label": "sociallinks"
+    },
+    {
+      "label": "Contact()",
+      "file_type": "code",
+      "source_file": "src/components/Contact.tsx",
+      "source_location": "L9",
       "id": "components_contact_contact",
       "community": 0,
       "norm_label": "contact()"
@@ -420,10 +573,19 @@
       "norm_label": "experience.tsx"
     },
     {
-      "label": "Experience()",
+      "label": "experiences",
       "file_type": "code",
       "source_file": "src/components/Experience.tsx",
       "source_location": "L5",
+      "id": "components_experience_experiences",
+      "community": 0,
+      "norm_label": "experiences"
+    },
+    {
+      "label": "Experience()",
+      "file_type": "code",
+      "source_file": "src/components/Experience.tsx",
+      "source_location": "L44",
       "id": "components_experience_experience",
       "community": 0,
       "norm_label": "experience()"
@@ -438,10 +600,19 @@
       "norm_label": "footer.tsx"
     },
     {
-      "label": "Footer()",
+      "label": "links",
       "file_type": "code",
       "source_file": "src/components/Footer.tsx",
       "source_location": "L3",
+      "id": "components_footer_links",
+      "community": 0,
+      "norm_label": "links"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L10",
       "id": "components_footer_footer",
       "community": 0,
       "norm_label": "footer()"
@@ -452,16 +623,43 @@
       "source_file": "src/components/Hero.tsx",
       "source_location": "L1",
       "id": "components_hero",
-      "community": 0,
+      "community": 28,
       "norm_label": "hero.tsx"
+    },
+    {
+      "label": "RetroTerminal",
+      "file_type": "code",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L5",
+      "id": "components_hero_retroterminal",
+      "community": 28,
+      "norm_label": "retroterminal"
+    },
+    {
+      "label": "useTerminalEnabled()",
+      "file_type": "code",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L11",
+      "id": "components_hero_useterminalenabled",
+      "community": 28,
+      "norm_label": "useterminalenabled()"
+    },
+    {
+      "label": "ChartLines()",
+      "file_type": "code",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L33",
+      "id": "components_hero_chartlines",
+      "community": 28,
+      "norm_label": "chartlines()"
     },
     {
       "label": "Hero()",
       "file_type": "code",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L3",
+      "source_location": "L57",
       "id": "components_hero_hero",
-      "community": 0,
+      "community": 28,
       "norm_label": "hero()"
     },
     {
@@ -474,10 +672,19 @@
       "norm_label": "navigation.tsx"
     },
     {
-      "label": "Navigation()",
+      "label": "links",
       "file_type": "code",
       "source_file": "src/components/Navigation.tsx",
       "source_location": "L5",
+      "id": "components_navigation_links",
+      "community": 0,
+      "norm_label": "links"
+    },
+    {
+      "label": "Navigation()",
+      "file_type": "code",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L13",
       "id": "components_navigation_navigation",
       "community": 0,
       "norm_label": "navigation()"
@@ -492,13 +699,67 @@
       "norm_label": "projects.tsx"
     },
     {
-      "label": "Projects()",
+      "label": "projects",
       "file_type": "code",
       "source_file": "src/components/Projects.tsx",
       "source_location": "L5",
       "id": "components_projects_projects",
       "community": 0,
-      "norm_label": "projects()"
+      "norm_label": "projects"
+    },
+    {
+      "label": "RetroTerminal.tsx",
+      "file_type": "code",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L1",
+      "id": "components_retroterminal",
+      "community": 29,
+      "norm_label": "retroterminal.tsx"
+    },
+    {
+      "label": "BOOT_LINES",
+      "file_type": "code",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L15",
+      "id": "components_retroterminal_boot_lines",
+      "community": 29,
+      "norm_label": "boot_lines"
+    },
+    {
+      "label": "FULL_TEXT",
+      "file_type": "code",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L31",
+      "id": "components_retroterminal_full_text",
+      "community": 29,
+      "norm_label": "full_text"
+    },
+    {
+      "label": "drawScreen()",
+      "file_type": "code",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L37",
+      "id": "components_retroterminal_drawscreen",
+      "community": 29,
+      "norm_label": "drawscreen()"
+    },
+    {
+      "label": "Terminal()",
+      "file_type": "code",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L85",
+      "id": "components_retroterminal_terminal",
+      "community": 29,
+      "norm_label": "terminal()"
+    },
+    {
+      "label": "RetroTerminal()",
+      "file_type": "code",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L228",
+      "id": "components_retroterminal_retroterminal",
+      "community": 29,
+      "norm_label": "retroterminal()"
     },
     {
       "label": "Skills.tsx",
@@ -510,10 +771,19 @@
       "norm_label": "skills.tsx"
     },
     {
-      "label": "Skills()",
+      "label": "skillCategories",
       "file_type": "code",
       "source_file": "src/components/Skills.tsx",
       "source_location": "L5",
+      "id": "components_skills_skillcategories",
+      "community": 0,
+      "norm_label": "skillcategories"
+    },
+    {
+      "label": "Skills()",
+      "file_type": "code",
+      "source_file": "src/components/Skills.tsx",
+      "source_location": "L34",
       "id": "components_skills_skills",
       "community": 0,
       "norm_label": "skills()"
@@ -531,7 +801,7 @@
       "label": "ProjectCardProps",
       "file_type": "code",
       "source_file": "src/components/common/ProjectCard.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "id": "common_projectcard_projectcardprops",
       "community": 0,
       "norm_label": "projectcardprops"
@@ -540,7 +810,7 @@
       "label": "ProjectCard()",
       "file_type": "code",
       "source_file": "src/components/common/ProjectCard.tsx",
-      "source_location": "L10",
+      "source_location": "L12",
       "id": "common_projectcard_projectcard",
       "community": 0,
       "norm_label": "projectcard()"
@@ -567,7 +837,7 @@
       "label": "SkillBadge()",
       "file_type": "code",
       "source_file": "src/components/common/SkillBadge.tsx",
-      "source_location": "L8",
+      "source_location": "L7",
       "id": "common_skillbadge_skillbadge",
       "community": 0,
       "norm_label": "skillbadge()"
@@ -585,7 +855,7 @@
       "label": "TimelineItemProps",
       "file_type": "code",
       "source_file": "src/components/common/TimelineItem.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "id": "common_timelineitem_timelineitemprops",
       "community": 0,
       "norm_label": "timelineitemprops"
@@ -598,6 +868,24 @@
       "id": "common_timelineitem_timelineitem",
       "community": 0,
       "norm_label": "timelineitem()"
+    },
+    {
+      "label": "usePointerParallax.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/usePointerParallax.ts",
+      "source_location": "L1",
+      "id": "hooks_usepointerparallax",
+      "community": 28,
+      "norm_label": "usepointerparallax.ts"
+    },
+    {
+      "label": "usePointerParallax()",
+      "file_type": "code",
+      "source_file": "src/hooks/usePointerParallax.ts",
+      "source_location": "L12",
+      "id": "hooks_usepointerparallax_usepointerparallax",
+      "community": 28,
+      "norm_label": "usepointerparallax()"
     },
     {
       "label": "useScrollAnimation.ts",
@@ -1032,6 +1320,546 @@
       "norm_label": "vite.config.ts"
     },
     {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L1",
+      "id": "frontend_design_skill",
+      "community": 23,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Frontend Design",
+      "file_type": "document",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L7",
+      "id": "frontend_design_skill_frontend_design",
+      "community": 23,
+      "norm_label": "frontend design"
+    },
+    {
+      "label": "Ground it in the subject",
+      "file_type": "document",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L11",
+      "id": "frontend_design_skill_ground_it_in_the_subject",
+      "community": 23,
+      "norm_label": "ground it in the subject"
+    },
+    {
+      "label": "Design principles",
+      "file_type": "document",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L15",
+      "id": "frontend_design_skill_design_principles",
+      "community": 23,
+      "norm_label": "design principles"
+    },
+    {
+      "label": "Process: brainstorm, explore, plan, critique, build, critique again",
+      "file_type": "document",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L29",
+      "id": "frontend_design_skill_process_brainstorm_explore_plan_critique_build_critique_again",
+      "community": 23,
+      "norm_label": "process: brainstorm, explore, plan, critique, build, critique again"
+    },
+    {
+      "label": "Restraint and self-critique",
+      "file_type": "document",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L41",
+      "id": "frontend_design_skill_restraint_and_self_critique",
+      "community": 23,
+      "norm_label": "restraint and self-critique"
+    },
+    {
+      "label": "More on writing in design",
+      "file_type": "document",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L45",
+      "id": "frontend_design_skill_more_on_writing_in_design",
+      "community": 23,
+      "norm_label": "more on writing in design"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents",
+      "community": 25,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents_graphify",
+      "community": 25,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "ARCHITECTURE.md",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1",
+      "id": "architecture",
+      "community": 5,
+      "norm_label": "architecture.md"
+    },
+    {
+      "label": "Portfolio Website - Component Architecture",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1",
+      "id": "architecture_portfolio_website_component_architecture",
+      "community": 5,
+      "norm_label": "portfolio website - component architecture"
+    },
+    {
+      "label": "Component Tree",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L3",
+      "id": "architecture_component_tree",
+      "community": 9,
+      "norm_label": "component tree"
+    },
+    {
+      "label": "Reusable Components",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L73",
+      "id": "architecture_reusable_components",
+      "community": 5,
+      "norm_label": "reusable components"
+    },
+    {
+      "label": "SkillBadge",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L75",
+      "id": "architecture_skillbadge",
+      "community": 5,
+      "norm_label": "skillbadge"
+    },
+    {
+      "label": "ProjectCard",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L88",
+      "id": "architecture_projectcard",
+      "community": 5,
+      "norm_label": "projectcard"
+    },
+    {
+      "label": "TimelineItem",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L103",
+      "id": "architecture_timelineitem",
+      "community": 5,
+      "norm_label": "timelineitem"
+    },
+    {
+      "label": "Custom Hooks",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L121",
+      "id": "architecture_custom_hooks",
+      "community": 6,
+      "norm_label": "custom hooks"
+    },
+    {
+      "label": "useTheme",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L123",
+      "id": "architecture_usetheme",
+      "community": 6,
+      "norm_label": "usetheme"
+    },
+    {
+      "label": "useScrollAnimation",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L136",
+      "id": "architecture_usescrollanimation",
+      "community": 5,
+      "norm_label": "usescrollanimation"
+    },
+    {
+      "label": "Utility Functions",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L149",
+      "id": "architecture_utility_functions",
+      "community": 5,
+      "norm_label": "utility functions"
+    },
+    {
+      "label": "classNames",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L151",
+      "id": "architecture_classnames",
+      "community": 5,
+      "norm_label": "classnames"
+    },
+    {
+      "label": "CSS Modules Structure",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L160",
+      "id": "architecture_css_modules_structure",
+      "community": 5,
+      "norm_label": "css modules structure"
+    },
+    {
+      "label": "Global Design Tokens (`src/index.css`)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L168",
+      "id": "architecture_global_design_tokens_src_index_css",
+      "community": 5,
+      "norm_label": "global design tokens (`src/index.css`)"
+    },
+    {
+      "label": "Animation System",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L189",
+      "id": "architecture_animation_system",
+      "community": 5,
+      "norm_label": "animation system"
+    },
+    {
+      "label": "Keyframes Available",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L191",
+      "id": "architecture_keyframes_available",
+      "community": 5,
+      "norm_label": "keyframes available"
+    },
+    {
+      "label": "Animation Delays",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L205",
+      "id": "architecture_animation_delays",
+      "community": 5,
+      "norm_label": "animation delays"
+    },
+    {
+      "label": "Data Flow",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L216",
+      "id": "architecture_data_flow",
+      "community": 5,
+      "norm_label": "data flow"
+    },
+    {
+      "label": "Performance Optimizations",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L225",
+      "id": "architecture_performance_optimizations",
+      "community": 5,
+      "norm_label": "performance optimizations"
+    },
+    {
+      "label": "Responsive Behavior",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L234",
+      "id": "architecture_responsive_behavior",
+      "community": 5,
+      "norm_label": "responsive behavior"
+    },
+    {
+      "label": "Desktop (1200px+)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L236",
+      "id": "architecture_desktop_1200px",
+      "community": 5,
+      "norm_label": "desktop (1200px+)"
+    },
+    {
+      "label": "Tablet (768px-1199px)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L242",
+      "id": "architecture_tablet_768px_1199px",
+      "community": 5,
+      "norm_label": "tablet (768px-1199px)"
+    },
+    {
+      "label": "Mobile (<768px)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L248",
+      "id": "architecture_mobile_768px",
+      "community": 5,
+      "norm_label": "mobile (<768px)"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "id": "claude",
+      "community": 26,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "id": "claude_graphify",
+      "community": 26,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme",
+      "community": 27,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "upcoming...",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_upcoming",
+      "community": 27,
+      "norm_label": "upcoming..."
+    },
+    {
+      "label": "HarborWater",
+      "file_type": "code",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L5",
+      "community": 28,
+      "norm_label": "harborwater",
+      "id": "components_hero_harborwater"
+    },
+    {
+      "label": "useWaterEnabled()",
+      "file_type": "code",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L11",
+      "community": 28,
+      "norm_label": "usewaterenabled()",
+      "id": "components_hero_usewaterenabled"
+    },
+    {
+      "label": "PORTFOLIO_GUIDE.md",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "portfolio_guide.md",
+      "id": "portfolio_guide"
+    },
+    {
+      "label": "\ud83d\ude80 Portfolio Website - Build Complete!",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "\ud83d\ude80 portfolio website - build complete!",
+      "id": "portfolio_guide_portfolio_website_build_complete"
+    },
+    {
+      "label": "\u2728 Features Implemented",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L5",
+      "community": 9,
+      "norm_label": "\u2728 features implemented",
+      "id": "portfolio_guide_features_implemented"
+    },
+    {
+      "label": "\ud83c\udfa8 **Modern Design System**",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L7",
+      "community": 9,
+      "norm_label": "\ud83c\udfa8 **modern design system**",
+      "id": "portfolio_guide_modern_design_system"
+    },
+    {
+      "label": "\ud83d\udcc4 **Page Sections**",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L13",
+      "community": 9,
+      "norm_label": "\ud83d\udcc4 **page sections**",
+      "id": "portfolio_guide_page_sections"
+    },
+    {
+      "label": "\ud83d\udee0 Tech Stack",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L64",
+      "community": 9,
+      "norm_label": "\ud83d\udee0 tech stack",
+      "id": "portfolio_guide_tech_stack"
+    },
+    {
+      "label": "\ud83d\udcc1 Project Structure",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L72",
+      "community": 9,
+      "norm_label": "\ud83d\udcc1 project structure",
+      "id": "portfolio_guide_project_structure"
+    },
+    {
+      "label": "\ud83c\udfa8 Color Scheme",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L99",
+      "community": 6,
+      "norm_label": "\ud83c\udfa8 color scheme",
+      "id": "portfolio_guide_color_scheme"
+    },
+    {
+      "label": "Light Mode (Default)",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L101",
+      "community": 6,
+      "norm_label": "light mode (default)",
+      "id": "portfolio_guide_light_mode_default"
+    },
+    {
+      "label": "Dark Mode",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L108",
+      "community": 6,
+      "norm_label": "dark mode",
+      "id": "portfolio_guide_dark_mode"
+    },
+    {
+      "label": "\ud83d\ude80 Getting Started",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L115",
+      "community": 9,
+      "norm_label": "\ud83d\ude80 getting started",
+      "id": "portfolio_guide_getting_started"
+    },
+    {
+      "label": "Development",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L117",
+      "community": 9,
+      "norm_label": "development",
+      "id": "portfolio_guide_development"
+    },
+    {
+      "label": "Build",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L125",
+      "community": 9,
+      "norm_label": "build",
+      "id": "portfolio_guide_build"
+    },
+    {
+      "label": "Linting",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L134",
+      "community": 9,
+      "norm_label": "linting",
+      "id": "portfolio_guide_linting"
+    },
+    {
+      "label": "Docker",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L140",
+      "community": 9,
+      "norm_label": "docker",
+      "id": "portfolio_guide_docker"
+    },
+    {
+      "label": "\ud83c\udfaf Key Animations",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L151",
+      "community": 9,
+      "norm_label": "\ud83c\udfaf key animations",
+      "id": "portfolio_guide_key_animations"
+    },
+    {
+      "label": "\ud83d\udcf1 Responsive Breakpoints",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L161",
+      "community": 5,
+      "norm_label": "\ud83d\udcf1 responsive breakpoints",
+      "id": "portfolio_guide_responsive_breakpoints"
+    },
+    {
+      "label": "\ud83d\udd0d SEO Optimization",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L167",
+      "community": 9,
+      "norm_label": "\ud83d\udd0d seo optimization",
+      "id": "portfolio_guide_seo_optimization"
+    },
+    {
+      "label": "\ud83d\udcbe Local Storage",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L176",
+      "community": 9,
+      "norm_label": "\ud83d\udcbe local storage",
+      "id": "portfolio_guide_local_storage"
+    },
+    {
+      "label": "\ud83d\udce6 Next Steps",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L181",
+      "community": 9,
+      "norm_label": "\ud83d\udce6 next steps",
+      "id": "portfolio_guide_next_steps"
+    },
+    {
+      "label": "\ud83d\udea2 Deployment",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L190",
+      "community": 9,
+      "norm_label": "\ud83d\udea2 deployment",
+      "id": "portfolio_guide_deployment"
+    },
+    {
+      "label": "\ud83d\udcde Support",
+      "file_type": "document",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L200",
+      "community": 9,
+      "norm_label": "\ud83d\udcde support",
+      "id": "portfolio_guide_support"
+    },
+    {
       "label": "App Component",
       "file_type": "code",
       "source_file": "src/App.tsx",
@@ -1040,9 +1868,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_tsx",
       "community": 4,
-      "norm_label": "app component"
+      "norm_label": "app component",
+      "id": "app_tsx"
     },
     {
       "label": "Navigation Component",
@@ -1053,9 +1881,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "navigation",
       "community": 4,
-      "norm_label": "navigation component"
+      "norm_label": "navigation component",
+      "id": "navigation"
     },
     {
       "label": "Hero Component",
@@ -1066,9 +1894,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "hero",
       "community": 4,
-      "norm_label": "hero component"
+      "norm_label": "hero component",
+      "id": "hero"
     },
     {
       "label": "About Component",
@@ -1079,9 +1907,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "about",
       "community": 4,
-      "norm_label": "about component"
+      "norm_label": "about component",
+      "id": "about"
     },
     {
       "label": "Skills Component",
@@ -1092,9 +1920,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "skills",
       "community": 4,
-      "norm_label": "skills component"
+      "norm_label": "skills component",
+      "id": "skills"
     },
     {
       "label": "Experience Component",
@@ -1105,9 +1933,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "experience",
       "community": 4,
-      "norm_label": "experience component"
+      "norm_label": "experience component",
+      "id": "experience"
     },
     {
       "label": "Projects Component",
@@ -1118,9 +1946,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "projects",
       "community": 4,
-      "norm_label": "projects component"
+      "norm_label": "projects component",
+      "id": "projects"
     },
     {
       "label": "Contact Component",
@@ -1131,9 +1959,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "contact",
       "community": 4,
-      "norm_label": "contact component"
+      "norm_label": "contact component",
+      "id": "contact"
     },
     {
       "label": "Footer Component",
@@ -1144,9 +1972,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "footer",
       "community": 4,
-      "norm_label": "footer component"
+      "norm_label": "footer component",
+      "id": "footer"
     },
     {
       "label": "ProjectCard Component",
@@ -1157,9 +1985,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "project_card",
       "community": 4,
-      "norm_label": "projectcard component"
+      "norm_label": "projectcard component",
+      "id": "project_card"
     },
     {
       "label": "SkillBadge Component",
@@ -1170,9 +1998,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "skill_badge",
       "community": 4,
-      "norm_label": "skillbadge component"
+      "norm_label": "skillbadge component",
+      "id": "skill_badge"
     },
     {
       "label": "TimelineItem Component",
@@ -1183,9 +2011,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "timeline_item",
       "community": 4,
-      "norm_label": "timelineitem component"
+      "norm_label": "timelineitem component",
+      "id": "timeline_item"
     },
     {
       "label": "useScrollAnimation Hook",
@@ -1196,9 +2024,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "use_scroll_animation",
       "community": 4,
-      "norm_label": "usescrollanimation hook"
+      "norm_label": "usescrollanimation hook",
+      "id": "use_scroll_animation"
     },
     {
       "label": "useTheme Hook",
@@ -1209,9 +2037,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "use_theme",
       "community": 4,
-      "norm_label": "usetheme hook"
+      "norm_label": "usetheme hook",
+      "id": "use_theme"
     },
     {
       "label": "classNames Utility",
@@ -1222,9 +2050,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "class_names",
       "community": 14,
-      "norm_label": "classnames utility"
+      "norm_label": "classnames utility",
+      "id": "class_names"
     },
     {
       "label": "Package Configuration",
@@ -1235,9 +2063,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "package_json",
       "community": 2,
-      "norm_label": "package configuration"
+      "norm_label": "package configuration",
+      "id": "package_json"
     },
     {
       "label": "Main Entry Point",
@@ -1248,22 +2076,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "main_tsx",
       "community": 4,
-      "norm_label": "main entry point"
-    },
-    {
-      "label": "Component Tree Structure",
-      "file_type": "concept",
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "3-71",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "architecture_component_tree",
-      "community": 9,
-      "norm_label": "component tree structure"
+      "norm_label": "main entry point",
+      "id": "main_tsx"
     },
     {
       "label": "App.tsx Root Component",
@@ -1274,35 +2089,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_app_tsx",
       "community": 6,
-      "norm_label": "app.tsx root component"
-    },
-    {
-      "label": "useTheme Custom Hook",
-      "file_type": "concept",
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "123-134",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "architecture_usetheme",
-      "community": 6,
-      "norm_label": "usetheme custom hook"
-    },
-    {
-      "label": "useScrollAnimation Custom Hook",
-      "file_type": "concept",
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "136-147",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "architecture_usescrollanimation",
-      "community": 5,
-      "norm_label": "usescrollanimation custom hook"
+      "norm_label": "app.tsx root component",
+      "id": "architecture_app_tsx"
     },
     {
       "label": "Navigation Component",
@@ -1313,9 +2102,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_navigation_component",
       "community": 6,
-      "norm_label": "navigation component"
+      "norm_label": "navigation component",
+      "id": "architecture_navigation_component"
     },
     {
       "label": "Hero Component",
@@ -1326,9 +2115,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_hero_component",
       "community": 13,
-      "norm_label": "hero component"
+      "norm_label": "hero component",
+      "id": "architecture_hero_component"
     },
     {
       "label": "About Component",
@@ -1339,9 +2128,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_about_component",
       "community": 5,
-      "norm_label": "about component"
+      "norm_label": "about component",
+      "id": "architecture_about_component"
     },
     {
       "label": "Skills Component",
@@ -1351,9 +2140,9 @@
       "source_url": null,
       "captured_at": null,
       "contributor": null,
-      "id": "architecture_skills_component",
       "community": 5,
-      "norm_label": "skills component"
+      "norm_label": "skills component",
+      "id": "architecture_skills_component"
     },
     {
       "label": "Experience Component with Timeline",
@@ -1364,9 +2153,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_experience_component",
       "community": 5,
-      "norm_label": "experience component with timeline"
+      "norm_label": "experience component with timeline",
+      "id": "architecture_experience_component"
     },
     {
       "label": "Projects Component",
@@ -1377,9 +2166,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_projects_component",
       "community": 5,
-      "norm_label": "projects component"
+      "norm_label": "projects component",
+      "id": "architecture_projects_component"
     },
     {
       "label": "Contact Component",
@@ -1390,9 +2179,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_contact_component",
       "community": 5,
-      "norm_label": "contact component"
+      "norm_label": "contact component",
+      "id": "architecture_contact_component"
     },
     {
       "label": "Footer Component",
@@ -1403,9 +2192,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_footer_component",
       "community": 12,
-      "norm_label": "footer component"
+      "norm_label": "footer component",
+      "id": "architecture_footer_component"
     },
     {
       "label": "SkillBadge Reusable Component",
@@ -1416,9 +2205,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_skillbadge_component",
       "community": 5,
-      "norm_label": "skillbadge reusable component"
+      "norm_label": "skillbadge reusable component",
+      "id": "architecture_skillbadge_component"
     },
     {
       "label": "ProjectCard Reusable Component",
@@ -1429,9 +2218,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_projectcard_component",
       "community": 5,
-      "norm_label": "projectcard reusable component"
+      "norm_label": "projectcard reusable component",
+      "id": "architecture_projectcard_component"
     },
     {
       "label": "TimelineItem Reusable Component",
@@ -1442,9 +2231,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_timelineitem_component",
       "community": 5,
-      "norm_label": "timelineitem reusable component"
+      "norm_label": "timelineitem reusable component",
+      "id": "architecture_timelineitem_component"
     },
     {
       "label": "CSS Modules Architecture",
@@ -1455,9 +2244,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_css_modules",
       "community": 6,
-      "norm_label": "css modules architecture"
+      "norm_label": "css modules architecture",
+      "id": "architecture_css_modules"
     },
     {
       "label": "Global Design Tokens",
@@ -1468,48 +2257,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_design_tokens",
       "community": 6,
-      "norm_label": "global design tokens"
-    },
-    {
-      "label": "Animation System Keyframes",
-      "file_type": "concept",
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "189-214",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "architecture_animation_system",
-      "community": 5,
-      "norm_label": "animation system keyframes"
-    },
-    {
-      "label": "Responsive Design Behavior",
-      "file_type": "concept",
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "234-253",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "architecture_responsive_behavior",
-      "community": 5,
-      "norm_label": "responsive design behavior"
-    },
-    {
-      "label": "Performance Optimizations",
-      "file_type": "concept",
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "225-232",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "architecture_performance_optimizations",
-      "community": 5,
-      "norm_label": "performance optimizations"
+      "norm_label": "global design tokens",
+      "id": "architecture_design_tokens"
     },
     {
       "label": "Portfolio Features Implemented",
@@ -1520,35 +2270,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "portfolio_guide_features",
       "community": 9,
-      "norm_label": "portfolio features implemented"
-    },
-    {
-      "label": "Tech Stack",
-      "file_type": "concept",
-      "source_file": "PORTFOLIO_GUIDE.md",
-      "source_location": "64-70",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "portfolio_guide_tech_stack",
-      "community": 9,
-      "norm_label": "tech stack"
-    },
-    {
-      "label": "Color Scheme Configuration",
-      "file_type": "concept",
-      "source_file": "PORTFOLIO_GUIDE.md",
-      "source_location": "99-113",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "portfolio_guide_color_scheme",
-      "community": 6,
-      "norm_label": "color scheme configuration"
+      "norm_label": "portfolio features implemented",
+      "id": "portfolio_guide_features"
     },
     {
       "label": "Key Animations Reference",
@@ -1559,22 +2283,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "portfolio_guide_animations",
       "community": 5,
-      "norm_label": "key animations reference"
-    },
-    {
-      "label": "Responsive Breakpoints",
-      "file_type": "concept",
-      "source_file": "PORTFOLIO_GUIDE.md",
-      "source_location": "161-165",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "portfolio_guide_responsive_breakpoints",
-      "community": 5,
-      "norm_label": "responsive breakpoints"
+      "norm_label": "key animations reference",
+      "id": "portfolio_guide_animations"
     },
     {
       "label": "build-and-push-image Job",
@@ -1585,9 +2296,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_deploy_build_and_push_image",
       "community": 7,
-      "norm_label": "build-and-push-image job"
+      "norm_label": "build-and-push-image job",
+      "id": "workflows_deploy_build_and_push_image"
     },
     {
       "label": "Checkout code Step",
@@ -1598,9 +2309,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_deploy_checkout",
       "community": 7,
-      "norm_label": "checkout code step"
+      "norm_label": "checkout code step",
+      "id": "workflows_deploy_checkout"
     },
     {
       "label": "Login to Docker Hub Step",
@@ -1611,9 +2322,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_deploy_login_docker",
       "community": 7,
-      "norm_label": "login to docker hub step"
+      "norm_label": "login to docker hub step",
+      "id": "workflows_deploy_login_docker"
     },
     {
       "label": "Build and push Docker image Step",
@@ -1624,9 +2335,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_deploy_build_push_docker",
       "community": 7,
-      "norm_label": "build and push docker image step"
+      "norm_label": "build and push docker image step",
+      "id": "workflows_deploy_build_push_docker"
     },
     {
       "label": "deploy-it-on-vps Job",
@@ -1637,9 +2348,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_deploy_deploy_it_on_vps",
       "community": 7,
-      "norm_label": "deploy-it-on-vps job"
+      "norm_label": "deploy-it-on-vps job",
+      "id": "workflows_deploy_deploy_it_on_vps"
     },
     {
       "label": "rebuild and run the docker container Step",
@@ -1650,9 +2361,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "workflows_deploy_rebuild_docker",
       "community": 7,
-      "norm_label": "rebuild and run the docker container step"
+      "norm_label": "rebuild and run the docker container step",
+      "id": "workflows_deploy_rebuild_docker"
     },
     {
       "label": "Docker Compose Web Service",
@@ -1663,9 +2374,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docker_compose_service_web",
       "community": 7,
-      "norm_label": "docker compose web service"
+      "norm_label": "docker compose web service",
+      "id": "docker_compose_service_web"
     },
     {
       "label": "Port Mapping 2000:80",
@@ -1676,9 +2387,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docker_compose_port_mapping",
       "community": 7,
-      "norm_label": "port mapping 2000:80"
+      "norm_label": "port mapping 2000:80",
+      "id": "docker_compose_port_mapping"
     },
     {
       "label": "Volume Mounting Configuration",
@@ -1689,9 +2400,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docker_compose_volume_mounting",
       "community": 7,
-      "norm_label": "volume mounting configuration"
+      "norm_label": "volume mounting configuration",
+      "id": "docker_compose_volume_mounting"
     },
     {
       "label": "HTML Head with SEO Meta Tags",
@@ -1702,9 +2413,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "index_html_head",
       "community": 6,
-      "norm_label": "html head with seo meta tags"
+      "norm_label": "html head with seo meta tags",
+      "id": "index_html_head"
     },
     {
       "label": "React Root Entry Point",
@@ -1715,9 +2426,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "index_html_root_entry",
       "community": 6,
-      "norm_label": "react root entry point"
+      "norm_label": "react root entry point",
+      "id": "index_html_root_entry"
     },
     {
       "label": "Favicon Link",
@@ -1728,9 +2439,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "index_html_favicon",
       "community": 6,
-      "norm_label": "favicon link"
+      "norm_label": "favicon link",
+      "id": "index_html_favicon"
     },
     {
       "label": "Purple Gradient Logo Icon",
@@ -1741,9 +2452,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "favicon_svg_purple_gradient_logo",
       "community": 6,
-      "norm_label": "purple gradient logo icon"
+      "norm_label": "purple gradient logo icon",
+      "id": "favicon_svg_purple_gradient_logo"
     },
     {
       "label": "Social Media Icons SVG Sprite",
@@ -1754,9 +2465,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_svg_social_collection",
       "community": 20,
-      "norm_label": "social media icons svg sprite"
+      "norm_label": "social media icons svg sprite",
+      "id": "icons_svg_social_collection"
     },
     {
       "label": "GitHub Icon",
@@ -1767,9 +2478,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_github_icon",
       "community": 18,
-      "norm_label": "github icon"
+      "norm_label": "github icon",
+      "id": "icons_github_icon"
     },
     {
       "label": "X/Twitter Icon",
@@ -1780,9 +2491,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_x_icon",
       "community": 21,
-      "norm_label": "x/twitter icon"
+      "norm_label": "x/twitter icon",
+      "id": "icons_x_icon"
     },
     {
       "label": "Discord Icon",
@@ -1793,9 +2504,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_discord_icon",
       "community": 16,
-      "norm_label": "discord icon"
+      "norm_label": "discord icon",
+      "id": "icons_discord_icon"
     },
     {
       "label": "Bluesky Icon",
@@ -1806,9 +2517,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_bluesky_icon",
       "community": 15,
-      "norm_label": "bluesky icon"
+      "norm_label": "bluesky icon",
+      "id": "icons_bluesky_icon"
     },
     {
       "label": "Documentation/Code Icon",
@@ -1819,9 +2530,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_documentation_icon",
       "community": 17,
-      "norm_label": "documentation/code icon"
+      "norm_label": "documentation/code icon",
+      "id": "icons_documentation_icon"
     },
     {
       "label": "Social Profile Icon with Badge",
@@ -1832,12 +2543,32 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_social_profile_icon",
       "community": 19,
-      "norm_label": "social profile icon with badge"
+      "norm_label": "social profile icon with badge",
+      "id": "icons_social_profile_icon"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings",
+      "target": "claude_settings_hooks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_pretooluse"
+    },
     {
       "relation": "references",
       "confidence": "INFERRED",
@@ -1854,9 +2585,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_dependencies",
-      "confidence_score": 1.0
+      "target": "package_dependencies"
     },
     {
       "relation": "contains",
@@ -1864,9 +2595,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_devdependencies",
-      "confidence_score": 1.0
+      "target": "package_devdependencies"
     },
     {
       "relation": "contains",
@@ -1874,9 +2605,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_name",
-      "confidence_score": 1.0
+      "target": "package_name"
     },
     {
       "relation": "contains",
@@ -1884,9 +2615,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_private",
-      "confidence_score": 1.0
+      "target": "package_private"
     },
     {
       "relation": "contains",
@@ -1894,9 +2625,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_scripts",
-      "confidence_score": 1.0
+      "target": "package_scripts"
     },
     {
       "relation": "contains",
@@ -1904,9 +2635,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_type",
-      "confidence_score": 1.0
+      "target": "package_type"
     },
     {
       "relation": "contains",
@@ -1914,9 +2645,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_version",
-      "confidence_score": 1.0
+      "target": "package_version"
     },
     {
       "relation": "contains",
@@ -1924,9 +2655,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_build",
-      "confidence_score": 1.0
+      "target": "package_scripts_build"
     },
     {
       "relation": "contains",
@@ -1934,9 +2665,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -1944,9 +2675,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_lint",
-      "confidence_score": 1.0
+      "target": "package_scripts_lint"
     },
     {
       "relation": "contains",
@@ -1954,9 +2685,9 @@
       "source_file": "package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_preview",
-      "confidence_score": 1.0
+      "target": "package_scripts_preview"
     },
     {
       "relation": "contains",
@@ -1964,9 +2695,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react"
     },
     {
       "relation": "contains",
@@ -1974,9 +2705,29 @@
       "source_file": "package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_three_fiber"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_three"
     },
     {
       "relation": "contains",
@@ -1984,9 +2735,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_babel_core",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_babel_core"
     },
     {
       "relation": "contains",
@@ -1994,9 +2745,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_babel_plugin_react_compiler",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_babel_plugin_react_compiler"
     },
     {
       "relation": "contains",
@@ -2004,9 +2755,9 @@
       "source_file": "package.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint"
     },
     {
       "relation": "contains",
@@ -2014,9 +2765,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_js",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_js"
     },
     {
       "relation": "contains",
@@ -2024,9 +2775,9 @@
       "source_file": "package.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_react_hooks",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_plugin_react_hooks"
     },
     {
       "relation": "contains",
@@ -2034,9 +2785,9 @@
       "source_file": "package.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_react_refresh",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_plugin_react_refresh"
     },
     {
       "relation": "contains",
@@ -2044,9 +2795,9 @@
       "source_file": "package.json",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_globals",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_globals"
     },
     {
       "relation": "contains",
@@ -2054,9 +2805,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_rolldown_plugin_babel",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_rolldown_plugin_babel"
     },
     {
       "relation": "contains",
@@ -2064,9 +2815,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_babel_core",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_babel_core"
     },
     {
       "relation": "contains",
@@ -2074,9 +2825,9 @@
       "source_file": "package.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_node",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_node"
     },
     {
       "relation": "contains",
@@ -2084,9 +2835,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_react"
     },
     {
       "relation": "contains",
@@ -2094,9 +2845,19 @@
       "source_file": "package.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_dom",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_react_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_three"
     },
     {
       "relation": "contains",
@@ -2104,9 +2865,9 @@
       "source_file": "package.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_typescript"
     },
     {
       "relation": "contains",
@@ -2114,9 +2875,9 @@
       "source_file": "package.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript_eslint",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_typescript_eslint"
     },
     {
       "relation": "contains",
@@ -2124,9 +2885,9 @@
       "source_file": "package.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_vite",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_vite"
     },
     {
       "relation": "contains",
@@ -2134,9 +2895,79 @@
       "source_file": "package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_vitejs_plugin_react",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_vitejs_plugin_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock",
+      "target": "skills_lock_skills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock",
+      "target": "skills_lock_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock_skills",
+      "target": "skills_lock_skills_frontend_design"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock_skills_frontend_design",
+      "target": "skills_lock_frontend_design_computedhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock_skills_frontend_design",
+      "target": "skills_lock_frontend_design_skillpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock_skills_frontend_design",
+      "target": "skills_lock_frontend_design_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock_skills_frontend_design",
+      "target": "skills_lock_frontend_design_sourcetype"
     },
     {
       "relation": "imports_from",
@@ -2145,9 +2976,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_about",
-      "confidence_score": 1.0
+      "target": "components_about"
     },
     {
       "relation": "imports",
@@ -2156,9 +2987,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_about_about",
-      "confidence_score": 1.0
+      "target": "components_about_about"
     },
     {
       "relation": "imports_from",
@@ -2167,9 +2998,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_contact",
-      "confidence_score": 1.0
+      "target": "components_contact"
     },
     {
       "relation": "imports",
@@ -2178,9 +3009,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_contact_contact",
-      "confidence_score": 1.0
+      "target": "components_contact_contact"
     },
     {
       "relation": "imports_from",
@@ -2189,9 +3020,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_experience",
-      "confidence_score": 1.0
+      "target": "components_experience"
     },
     {
       "relation": "imports",
@@ -2200,9 +3031,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_experience_experience",
-      "confidence_score": 1.0
+      "target": "components_experience_experience"
     },
     {
       "relation": "imports_from",
@@ -2211,9 +3042,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_footer",
-      "confidence_score": 1.0
+      "target": "components_footer"
     },
     {
       "relation": "imports",
@@ -2222,9 +3053,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_footer_footer",
-      "confidence_score": 1.0
+      "target": "components_footer_footer"
     },
     {
       "relation": "imports_from",
@@ -2233,9 +3064,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_hero",
-      "confidence_score": 1.0
+      "target": "components_hero"
     },
     {
       "relation": "imports",
@@ -2244,9 +3075,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_hero_hero",
-      "confidence_score": 1.0
+      "target": "components_hero_hero"
     },
     {
       "relation": "imports_from",
@@ -2255,9 +3086,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_navigation",
-      "confidence_score": 1.0
+      "target": "components_navigation"
     },
     {
       "relation": "imports",
@@ -2266,9 +3097,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_navigation_navigation",
-      "confidence_score": 1.0
+      "target": "components_navigation_navigation"
     },
     {
       "relation": "imports_from",
@@ -2277,9 +3108,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_projects",
-      "confidence_score": 1.0
+      "target": "components_projects"
     },
     {
       "relation": "imports",
@@ -2288,9 +3119,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_projects_projects",
-      "confidence_score": 1.0
+      "target": "components_projects_projects"
     },
     {
       "relation": "imports_from",
@@ -2299,9 +3130,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_skills",
-      "confidence_score": 1.0
+      "target": "components_skills"
     },
     {
       "relation": "imports",
@@ -2310,9 +3141,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_skills_skills",
-      "confidence_score": 1.0
+      "target": "components_skills_skills"
     },
     {
       "relation": "imports_from",
@@ -2321,9 +3152,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "hooks_usetheme",
-      "confidence_score": 1.0
+      "target": "hooks_usetheme"
     },
     {
       "relation": "imports",
@@ -2332,9 +3163,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "hooks_usetheme_usetheme",
-      "confidence_score": 1.0
+      "target": "hooks_usetheme_usetheme"
     },
     {
       "relation": "contains",
@@ -2342,9 +3173,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "imports_from",
@@ -2353,9 +3184,9 @@
       "source_file": "src/main.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_app",
-      "confidence_score": 1.0
+      "target": "src_app"
     },
     {
       "relation": "calls",
@@ -2374,9 +3205,29 @@
       "source_file": "src/components/About.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_about",
-      "target": "components_about_about",
-      "confidence_score": 1.0
+      "target": "components_about_about"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/About.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_about",
+      "target": "components_about_highlights"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/About.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_about",
+      "target": "components_about_traits"
     },
     {
       "relation": "imports_from",
@@ -2385,9 +3236,9 @@
       "source_file": "src/components/About.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_about",
-      "target": "hooks_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation"
     },
     {
       "relation": "imports",
@@ -2396,9 +3247,9 @@
       "source_file": "src/components/About.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_about",
-      "target": "hooks_usescrollanimation_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation_usescrollanimation"
     },
     {
       "relation": "calls",
@@ -2417,9 +3268,19 @@
       "source_file": "src/components/Contact.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_contact",
-      "target": "components_contact_contact",
-      "confidence_score": 1.0
+      "target": "components_contact_contact"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Contact.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_contact",
+      "target": "components_contact_sociallinks"
     },
     {
       "relation": "imports_from",
@@ -2428,9 +3289,9 @@
       "source_file": "src/components/Contact.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_contact",
-      "target": "hooks_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation"
     },
     {
       "relation": "imports",
@@ -2439,9 +3300,9 @@
       "source_file": "src/components/Contact.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_contact",
-      "target": "hooks_usescrollanimation_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation_usescrollanimation"
     },
     {
       "relation": "calls",
@@ -2461,9 +3322,9 @@
       "source_file": "src/components/Experience.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_experience",
-      "target": "common_timelineitem",
-      "confidence_score": 1.0
+      "target": "common_timelineitem"
     },
     {
       "relation": "imports",
@@ -2472,9 +3333,9 @@
       "source_file": "src/components/Experience.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_experience",
-      "target": "common_timelineitem_timelineitem",
-      "confidence_score": 1.0
+      "target": "common_timelineitem_timelineitem"
     },
     {
       "relation": "contains",
@@ -2482,9 +3343,19 @@
       "source_file": "src/components/Experience.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_experience",
-      "target": "components_experience_experience",
-      "confidence_score": 1.0
+      "target": "components_experience_experience"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Experience.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_experience",
+      "target": "components_experience_experiences"
     },
     {
       "relation": "imports_from",
@@ -2493,9 +3364,9 @@
       "source_file": "src/components/Experience.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_experience",
-      "target": "hooks_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation"
     },
     {
       "relation": "imports",
@@ -2504,9 +3375,9 @@
       "source_file": "src/components/Experience.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_experience",
-      "target": "hooks_usescrollanimation_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation_usescrollanimation"
     },
     {
       "relation": "calls",
@@ -2525,9 +3396,39 @@
       "source_file": "src/components/Footer.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_footer",
-      "target": "components_footer_footer",
-      "confidence_score": 1.0
+      "target": "components_footer_footer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_footer",
+      "target": "components_footer_links"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "components_hero_chartlines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "components_hero_harborwater"
     },
     {
       "relation": "contains",
@@ -2535,9 +3436,94 @@
       "source_file": "src/components/Hero.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_hero",
-      "target": "components_hero_hero",
+      "target": "components_hero_hero"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_hero",
+      "target": "components_hero_retroterminal",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_hero",
+      "target": "components_hero_useterminalenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "components_hero_usewaterenabled"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "hooks_usepointerparallax"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "hooks_usepointerparallax_usepointerparallax"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "components_hero_hero",
+      "target": "components_hero_useterminalenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_hero_hero",
+      "target": "components_hero_usewaterenabled"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "components_hero_hero",
+      "target": "hooks_usepointerparallax_usepointerparallax"
     },
     {
       "relation": "contains",
@@ -2545,9 +3531,19 @@
       "source_file": "src/components/Navigation.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_navigation",
-      "target": "components_navigation_navigation",
-      "confidence_score": 1.0
+      "target": "components_navigation_links"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_navigation",
+      "target": "components_navigation_navigation"
     },
     {
       "relation": "imports_from",
@@ -2556,9 +3552,9 @@
       "source_file": "src/components/Navigation.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_navigation",
-      "target": "hooks_usetheme",
-      "confidence_score": 1.0
+      "target": "hooks_usetheme"
     },
     {
       "relation": "imports",
@@ -2567,9 +3563,9 @@
       "source_file": "src/components/Navigation.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_navigation",
-      "target": "hooks_usetheme_usetheme",
-      "confidence_score": 1.0
+      "target": "hooks_usetheme_usetheme"
     },
     {
       "relation": "calls",
@@ -2589,9 +3585,9 @@
       "source_file": "src/components/Projects.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_projects",
-      "target": "common_projectcard",
-      "confidence_score": 1.0
+      "target": "common_projectcard"
     },
     {
       "relation": "imports",
@@ -2600,9 +3596,9 @@
       "source_file": "src/components/Projects.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_projects",
-      "target": "common_projectcard_projectcard",
-      "confidence_score": 1.0
+      "target": "common_projectcard_projectcard"
     },
     {
       "relation": "contains",
@@ -2610,9 +3606,9 @@
       "source_file": "src/components/Projects.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_projects",
-      "target": "components_projects_projects",
-      "confidence_score": 1.0
+      "target": "components_projects_projects"
     },
     {
       "relation": "imports_from",
@@ -2621,9 +3617,9 @@
       "source_file": "src/components/Projects.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_projects",
-      "target": "hooks_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation"
     },
     {
       "relation": "imports",
@@ -2632,9 +3628,9 @@
       "source_file": "src/components/Projects.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_projects",
-      "target": "hooks_usescrollanimation_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation_usescrollanimation"
     },
     {
       "relation": "calls",
@@ -2648,15 +3644,65 @@
       "target": "hooks_usescrollanimation_usescrollanimation"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "components_retroterminal",
+      "target": "components_retroterminal_boot_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "components_retroterminal",
+      "target": "components_retroterminal_drawscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "components_retroterminal",
+      "target": "components_retroterminal_full_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "components_retroterminal",
+      "target": "components_retroterminal_retroterminal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RetroTerminal.tsx",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "components_retroterminal",
+      "target": "components_retroterminal_terminal",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Skills.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_skills",
-      "target": "common_skillbadge",
-      "confidence_score": 1.0
+      "target": "common_skillbadge"
     },
     {
       "relation": "imports",
@@ -2665,9 +3711,9 @@
       "source_file": "src/components/Skills.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_skills",
-      "target": "common_skillbadge_skillbadge",
-      "confidence_score": 1.0
+      "target": "common_skillbadge_skillbadge"
     },
     {
       "relation": "contains",
@@ -2675,9 +3721,19 @@
       "source_file": "src/components/Skills.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_skills",
-      "target": "components_skills_skills",
-      "confidence_score": 1.0
+      "target": "components_skills_skillcategories"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Skills.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_skills",
+      "target": "components_skills_skills"
     },
     {
       "relation": "imports_from",
@@ -2686,9 +3742,9 @@
       "source_file": "src/components/Skills.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_skills",
-      "target": "hooks_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation"
     },
     {
       "relation": "imports",
@@ -2697,9 +3753,9 @@
       "source_file": "src/components/Skills.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_skills",
-      "target": "hooks_usescrollanimation_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation_usescrollanimation"
     },
     {
       "relation": "calls",
@@ -2718,9 +3774,9 @@
       "source_file": "src/components/common/ProjectCard.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "common_projectcard",
-      "target": "common_projectcard_projectcard",
-      "confidence_score": 1.0
+      "target": "common_projectcard_projectcard"
     },
     {
       "relation": "contains",
@@ -2728,9 +3784,9 @@
       "source_file": "src/components/common/ProjectCard.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "common_projectcard",
-      "target": "common_projectcard_projectcardprops",
-      "confidence_score": 1.0
+      "target": "common_projectcard_projectcardprops"
     },
     {
       "relation": "contains",
@@ -2738,9 +3794,9 @@
       "source_file": "src/components/common/SkillBadge.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "common_skillbadge",
-      "target": "common_skillbadge_skillbadge",
-      "confidence_score": 1.0
+      "target": "common_skillbadge_skillbadge"
     },
     {
       "relation": "contains",
@@ -2748,9 +3804,9 @@
       "source_file": "src/components/common/SkillBadge.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "common_skillbadge",
-      "target": "common_skillbadge_skillbadgeprops",
-      "confidence_score": 1.0
+      "target": "common_skillbadge_skillbadgeprops"
     },
     {
       "relation": "contains",
@@ -2758,9 +3814,9 @@
       "source_file": "src/components/common/TimelineItem.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "common_timelineitem",
-      "target": "common_timelineitem_timelineitem",
-      "confidence_score": 1.0
+      "target": "common_timelineitem_timelineitem"
     },
     {
       "relation": "contains",
@@ -2768,9 +3824,19 @@
       "source_file": "src/components/common/TimelineItem.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "common_timelineitem",
-      "target": "common_timelineitem_timelineitemprops",
-      "confidence_score": 1.0
+      "target": "common_timelineitem_timelineitemprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/usePointerParallax.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hooks_usepointerparallax",
+      "target": "hooks_usepointerparallax_usepointerparallax"
     },
     {
       "relation": "contains",
@@ -2778,9 +3844,9 @@
       "source_file": "src/hooks/useScrollAnimation.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hooks_usescrollanimation",
-      "target": "hooks_usescrollanimation_usescrollanimation",
-      "confidence_score": 1.0
+      "target": "hooks_usescrollanimation_usescrollanimation"
     },
     {
       "relation": "contains",
@@ -2788,9 +3854,9 @@
       "source_file": "src/hooks/useTheme.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hooks_usetheme",
-      "target": "hooks_usetheme_usetheme",
-      "confidence_score": 1.0
+      "target": "hooks_usetheme_usetheme"
     },
     {
       "relation": "contains",
@@ -2798,9 +3864,9 @@
       "source_file": "src/utils/classNames.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_classnames",
-      "target": "utils_classnames_cn",
-      "confidence_score": 1.0
+      "target": "utils_classnames_cn"
     },
     {
       "relation": "contains",
@@ -2808,9 +3874,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app",
-      "target": "tsconfig_app_compileroptions",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions"
     },
     {
       "relation": "contains",
@@ -2818,9 +3884,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app",
-      "target": "tsconfig_app_include",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_include"
     },
     {
       "relation": "references",
@@ -2838,9 +3904,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_allowimportingtsextensions",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_allowimportingtsextensions"
     },
     {
       "relation": "contains",
@@ -2848,9 +3914,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_erasablesyntaxonly",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_erasablesyntaxonly"
     },
     {
       "relation": "contains",
@@ -2858,9 +3924,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_jsx",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_jsx"
     },
     {
       "relation": "contains",
@@ -2868,9 +3934,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_lib",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_lib"
     },
     {
       "relation": "contains",
@@ -2878,9 +3944,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_module",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_module"
     },
     {
       "relation": "contains",
@@ -2888,9 +3954,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_moduledetection",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_moduledetection"
     },
     {
       "relation": "contains",
@@ -2898,9 +3964,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_moduleresolution",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_moduleresolution"
     },
     {
       "relation": "contains",
@@ -2908,9 +3974,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_noemit",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_noemit"
     },
     {
       "relation": "contains",
@@ -2918,9 +3984,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_nofallthroughcasesinswitch"
     },
     {
       "relation": "contains",
@@ -2928,9 +3994,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_nounusedlocals",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_nounusedlocals"
     },
     {
       "relation": "contains",
@@ -2938,9 +4004,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_nounusedparameters",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_nounusedparameters"
     },
     {
       "relation": "contains",
@@ -2948,9 +4014,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_skiplibcheck",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_skiplibcheck"
     },
     {
       "relation": "contains",
@@ -2958,9 +4024,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_target",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_target"
     },
     {
       "relation": "contains",
@@ -2968,9 +4034,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_tsbuildinfofile",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_tsbuildinfofile"
     },
     {
       "relation": "contains",
@@ -2978,9 +4044,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_types",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_types"
     },
     {
       "relation": "contains",
@@ -2988,9 +4054,9 @@
       "source_file": "tsconfig.app.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_app_compileroptions",
-      "target": "tsconfig_app_compileroptions_verbatimmodulesyntax",
-      "confidence_score": 1.0
+      "target": "tsconfig_app_compileroptions_verbatimmodulesyntax"
     },
     {
       "relation": "contains",
@@ -2998,9 +4064,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_files",
-      "confidence_score": 1.0
+      "target": "tsconfig_files"
     },
     {
       "relation": "contains",
@@ -3008,9 +4074,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_references",
-      "confidence_score": 1.0
+      "target": "tsconfig_references"
     },
     {
       "relation": "contains",
@@ -3018,9 +4084,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node",
-      "target": "tsconfig_node_compileroptions",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions"
     },
     {
       "relation": "contains",
@@ -3028,9 +4094,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node",
-      "target": "tsconfig_node_include",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_include"
     },
     {
       "relation": "contains",
@@ -3038,9 +4104,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_allowimportingtsextensions",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_allowimportingtsextensions"
     },
     {
       "relation": "contains",
@@ -3048,9 +4114,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_erasablesyntaxonly",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_erasablesyntaxonly"
     },
     {
       "relation": "contains",
@@ -3058,9 +4124,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_lib",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_lib"
     },
     {
       "relation": "contains",
@@ -3068,9 +4134,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_module",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_module"
     },
     {
       "relation": "contains",
@@ -3078,9 +4144,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_moduledetection",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_moduledetection"
     },
     {
       "relation": "contains",
@@ -3088,9 +4154,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_moduleresolution",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_moduleresolution"
     },
     {
       "relation": "contains",
@@ -3098,9 +4164,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_noemit",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_noemit"
     },
     {
       "relation": "contains",
@@ -3108,9 +4174,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_nofallthroughcasesinswitch",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_nofallthroughcasesinswitch"
     },
     {
       "relation": "contains",
@@ -3118,9 +4184,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_nounusedlocals",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_nounusedlocals"
     },
     {
       "relation": "contains",
@@ -3128,9 +4194,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_nounusedparameters",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_nounusedparameters"
     },
     {
       "relation": "contains",
@@ -3138,9 +4204,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_skiplibcheck",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_skiplibcheck"
     },
     {
       "relation": "contains",
@@ -3148,9 +4214,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_target",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_target"
     },
     {
       "relation": "contains",
@@ -3158,9 +4224,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_tsbuildinfofile",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_tsbuildinfofile"
     },
     {
       "relation": "contains",
@@ -3168,9 +4234,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_types",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_types"
     },
     {
       "relation": "contains",
@@ -3178,9 +4244,9 @@
       "source_file": "tsconfig.node.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_node_compileroptions",
-      "target": "tsconfig_node_compileroptions_verbatimmodulesyntax",
-      "confidence_score": 1.0
+      "target": "tsconfig_node_compileroptions_verbatimmodulesyntax"
     },
     {
       "relation": "references",
@@ -3191,6 +4257,706 @@
       "weight": 1.0,
       "source": "vite_config",
       "target": "package_json"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_design_skill",
+      "target": "frontend_design_skill_frontend_design"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_design_skill_frontend_design",
+      "target": "frontend_design_skill_design_principles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_design_skill_frontend_design",
+      "target": "frontend_design_skill_ground_it_in_the_subject"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_design_skill_frontend_design",
+      "target": "frontend_design_skill_more_on_writing_in_design"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_design_skill_frontend_design",
+      "target": "frontend_design_skill_process_brainstorm_explore_plan_critique_build_critique_again"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/frontend-design/SKILL.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_design_skill_frontend_design",
+      "target": "frontend_design_skill_restraint_and_self_critique"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents",
+      "target": "agents_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture",
+      "target": "architecture_portfolio_website_component_architecture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L189",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_animation_system"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_component_tree"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_css_modules_structure"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_custom_hooks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L216",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_data_flow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_performance_optimizations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L234",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_responsive_behavior"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_reusable_components"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_portfolio_website_component_architecture",
+      "target": "architecture_utility_functions"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "5-63",
+      "weight": 1.0,
+      "source": "portfolio_guide_features",
+      "target": "architecture_component_tree"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "64-70",
+      "weight": 1.0,
+      "source": "portfolio_guide_tech_stack",
+      "target": "architecture_component_tree"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_reusable_components",
+      "target": "architecture_projectcard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_reusable_components",
+      "target": "architecture_skillbadge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_reusable_components",
+      "target": "architecture_timelineitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_custom_hooks",
+      "target": "architecture_usescrollanimation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_custom_hooks",
+      "target": "architecture_usetheme"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "7",
+      "weight": 1.0,
+      "source": "architecture_app_tsx",
+      "target": "architecture_usetheme"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "10",
+      "weight": 1.0,
+      "source": "architecture_navigation_component",
+      "target": "architecture_usetheme"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "123-134",
+      "weight": 1.0,
+      "source": "architecture_usetheme",
+      "target": "architecture_design_tokens"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "21",
+      "weight": 1.0,
+      "source": "architecture_about_component",
+      "target": "architecture_usescrollanimation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "62",
+      "weight": 1.0,
+      "source": "architecture_contact_component",
+      "target": "architecture_usescrollanimation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "41",
+      "weight": 1.0,
+      "source": "architecture_experience_component",
+      "target": "architecture_usescrollanimation"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "225-232",
+      "weight": 1.0,
+      "source": "architecture_performance_optimizations",
+      "target": "architecture_usescrollanimation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "51",
+      "weight": 1.0,
+      "source": "architecture_projects_component",
+      "target": "architecture_usescrollanimation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "30",
+      "weight": 1.0,
+      "source": "architecture_skills_component",
+      "target": "architecture_usescrollanimation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_utility_functions",
+      "target": "architecture_classnames"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L168",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_css_modules_structure",
+      "target": "architecture_global_design_tokens_src_index_css"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_animation_system",
+      "target": "architecture_animation_delays"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L191",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_animation_system",
+      "target": "architecture_keyframes_available"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "88-101",
+      "weight": 1.0,
+      "source": "architecture_projectcard_component",
+      "target": "architecture_animation_system"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "234-253",
+      "weight": 1.0,
+      "source": "architecture_responsive_behavior",
+      "target": "architecture_animation_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "75-86",
+      "weight": 1.0,
+      "source": "architecture_skillbadge_component",
+      "target": "architecture_animation_system"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "103-119",
+      "weight": 1.0,
+      "source": "architecture_timelineitem_component",
+      "target": "architecture_animation_system"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "151-159",
+      "weight": 1.0,
+      "source": "portfolio_guide_animations",
+      "target": "architecture_animation_system"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L236",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_responsive_behavior",
+      "target": "architecture_desktop_1200px"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L248",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_responsive_behavior",
+      "target": "architecture_mobile_768px"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L242",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "architecture_responsive_behavior",
+      "target": "architecture_tablet_768px_1199px"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "161-165",
+      "weight": 1.0,
+      "source": "portfolio_guide_responsive_breakpoints",
+      "target": "architecture_responsive_behavior"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude",
+      "target": "claude_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "readme_upcoming"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide",
+      "target": "portfolio_guide_portfolio_website_build_complete"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_color_scheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L190",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_deployment"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_features_implemented"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_getting_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_key_animations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_local_storage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L181",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_next_steps"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_project_structure"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L161",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_responsive_breakpoints"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_seo_optimization"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L200",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_support"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_portfolio_website_build_complete",
+      "target": "portfolio_guide_tech_stack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_features_implemented",
+      "target": "portfolio_guide_modern_design_system"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_features_implemented",
+      "target": "portfolio_guide_page_sections"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "99-113",
+      "weight": 1.0,
+      "source": "portfolio_guide_color_scheme",
+      "target": "architecture_design_tokens"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_color_scheme",
+      "target": "portfolio_guide_dark_mode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_color_scheme",
+      "target": "portfolio_guide_light_mode_default"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_getting_started",
+      "target": "portfolio_guide_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_getting_started",
+      "target": "portfolio_guide_development"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_getting_started",
+      "target": "portfolio_guide_docker"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PORTFOLIO_GUIDE.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_guide_getting_started",
+      "target": "portfolio_guide_linting"
     },
     {
       "relation": "calls",
@@ -3383,116 +5149,6 @@
       "target": "use_scroll_animation"
     },
     {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PORTFOLIO_GUIDE.md",
-      "source_location": "5-63",
-      "weight": 1.0,
-      "source": "portfolio_guide_features",
-      "target": "architecture_component_tree"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PORTFOLIO_GUIDE.md",
-      "source_location": "64-70",
-      "weight": 1.0,
-      "source": "portfolio_guide_tech_stack",
-      "target": "architecture_component_tree"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "7",
-      "weight": 1.0,
-      "source": "architecture_app_tsx",
-      "target": "architecture_usetheme"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "10",
-      "weight": 1.0,
-      "source": "architecture_navigation_component",
-      "target": "architecture_usetheme"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "123-134",
-      "weight": 1.0,
-      "source": "architecture_usetheme",
-      "target": "architecture_design_tokens"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "21",
-      "weight": 1.0,
-      "source": "architecture_about_component",
-      "target": "architecture_usescrollanimation"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "62",
-      "weight": 1.0,
-      "source": "architecture_contact_component",
-      "target": "architecture_usescrollanimation"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "41",
-      "weight": 1.0,
-      "source": "architecture_experience_component",
-      "target": "architecture_usescrollanimation"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "225-232",
-      "weight": 1.0,
-      "source": "architecture_performance_optimizations",
-      "target": "architecture_usescrollanimation"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "51",
-      "weight": 1.0,
-      "source": "architecture_projects_component",
-      "target": "architecture_usescrollanimation"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "30",
-      "weight": 1.0,
-      "source": "architecture_skills_component",
-      "target": "architecture_usescrollanimation"
-    },
-    {
       "relation": "implements",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
@@ -3533,36 +5189,6 @@
       "target": "architecture_projectcard_component"
     },
     {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "75-86",
-      "weight": 1.0,
-      "source": "architecture_skillbadge_component",
-      "target": "architecture_animation_system"
-    },
-    {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "88-101",
-      "weight": 1.0,
-      "source": "architecture_projectcard_component",
-      "target": "architecture_animation_system"
-    },
-    {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "103-119",
-      "weight": 1.0,
-      "source": "architecture_timelineitem_component",
-      "target": "architecture_animation_system"
-    },
-    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3571,46 +5197,6 @@
       "weight": 1.0,
       "source": "architecture_css_modules",
       "target": "architecture_design_tokens"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PORTFOLIO_GUIDE.md",
-      "source_location": "99-113",
-      "weight": 1.0,
-      "source": "portfolio_guide_color_scheme",
-      "target": "architecture_design_tokens"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "ARCHITECTURE.md",
-      "source_location": "234-253",
-      "weight": 1.0,
-      "source": "architecture_responsive_behavior",
-      "target": "architecture_animation_system"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PORTFOLIO_GUIDE.md",
-      "source_location": "151-159",
-      "weight": 1.0,
-      "source": "portfolio_guide_animations",
-      "target": "architecture_animation_system"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PORTFOLIO_GUIDE.md",
-      "source_location": "161-165",
-      "weight": 1.0,
-      "source": "portfolio_guide_responsive_breakpoints",
-      "target": "architecture_responsive_behavior"
     },
     {
       "relation": "references",
@@ -3796,5 +5382,5 @@
       "source_file": "public/icons.svg"
     }
   ],
-  "built_at_commit": "084f010bd7bc6fea4987776338306c674a5ace71"
+  "built_at_commit": "d1675f40729c124d3b26481faf9c8b16285a71ab"
 }

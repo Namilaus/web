@@ -15,6 +15,16 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+  /* Pointer + scroll parallax, written by usePointerParallax.
+     Slightly scaled so the translate never exposes the edges. */
+  transform: scale(1.06)
+    translate3d(
+      calc(var(--pointer-x, 0) * 20px),
+      calc(var(--pointer-y, 0) * 16px + var(--scroll-y, 0px) * 0.08),
+      0
+    );
+  transition: transform 600ms var(--ease-out);
+  will-change: transform;
 }
 
 .chart path {
@@ -38,6 +48,30 @@
   opacity: 0.55;
 }
 
+/* Sonar glow — trails the cursor at a faster rate than the chart,
+   creating depth separation. Centred when the pointer is idle. */
+.sonar {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    260px circle at calc(50% + var(--pointer-x, 0) * 42%)
+      calc(50% + var(--pointer-y, 0) * 42%),
+    var(--amber-soft),
+    transparent 70%
+  );
+  opacity: 0.9;
+  transition: background 220ms var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chart,
+  .sonar {
+    transform: none;
+    transition: none;
+  }
+}
+
 /* --- Content --- */
 
 .container {
@@ -46,6 +80,17 @@
   width: 100%;
   margin: 0 auto;
   padding: 120px var(--gutter) 40px;
+  /* Sit above the 3D terminal where they overlap, but let pointer
+     events fall through to it except on actual content blocks. */
+  z-index: 2;
+  pointer-events: none;
+}
+
+.eyebrow,
+.roles,
+.description,
+.cta {
+  pointer-events: auto;
 }
 
 .eyebrow {
@@ -171,6 +216,7 @@
 
 .registry {
   position: relative;
+  z-index: 2;
   max-width: var(--container);
   width: 100%;
   margin: 0 auto;

@@ -1,4 +1,33 @@
+import { lazy, Suspense, useEffect, useState } from 'react';
+import { usePointerParallax } from '../hooks/usePointerParallax';
 import styles from './Hero.module.css';
+
+const RetroTerminal = lazy(() => import('./RetroTerminal'));
+
+/* Mount the WebGL terminal only on wide viewports where it has room
+   beside the text, and only once the browser is idle so it never
+   competes with first paint. Under prefers-reduced-motion it renders a
+   single static frame (fully booted) instead of animating. */
+const useTerminalEnabled = () => {
+  const [enabled, setEnabled] = useState(false);
+
+  useEffect(() => {
+    const wide = window.matchMedia('(min-width: 1140px)');
+    if (!wide.matches) return;
+
+    const hasIdle = typeof window.requestIdleCallback === 'function';
+    const idle = hasIdle
+      ? window.requestIdleCallback(() => setEnabled(true))
+      : window.setTimeout(() => setEnabled(true), 350);
+
+    return () => {
+      if (hasIdle) window.cancelIdleCallback(idle);
+      else window.clearTimeout(idle);
+    };
+  }, []);
+
+  return enabled;
+};
 
 /* Nautical depth contours of an imagined Elbe chart — the hero's backdrop */
 const ChartLines = () => (
@@ -26,13 +55,22 @@ const ChartLines = () => (
 );
 
 export const Hero = () => {
+  const heroRef = usePointerParallax<HTMLElement>();
+  const terminalEnabled = useTerminalEnabled();
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section id="home" className={styles.hero}>
+    <section id="home" ref={heroRef} className={styles.hero}>
       <ChartLines />
+      <div className={styles.sonar} aria-hidden="true" />
+      {terminalEnabled && (
+        <Suspense fallback={null}>
+          <RetroTerminal />
+        </Suspense>
+      )}
 
       <div className={styles.container}>
         <p className={styles.eyebrow}>

@@ -5,9 +5,9 @@
     "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
   },
   "package.json": {
-    "mtime": 1779274098.6875598,
-    "ast_hash": "f3a7f64e4c88265322fd4c3670f569f7",
-    "semantic_hash": "f3a7f64e4c88265322fd4c3670f569f7"
+    "mtime": 1781119480.0261931,
+    "ast_hash": "710db528a92c4ae128f2fae8e3f1eaa7",
+    "semantic_hash": ""
   },
   "src/App.tsx": {
     "mtime": 1780655970.334737,
@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "src/components/Contact.tsx": {
-    "mtime": 1781116157.785316,
-    "ast_hash": "4681b465f9814f67df42d40adbad046e",
+    "mtime": 1781116900.3722064,
+    "ast_hash": "f9ba35caf2463f303bdc66420b53e855",
     "semantic_hash": ""
   },
   "src/components/Experience.tsx": {
@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/components/Hero.tsx": {
-    "mtime": 1781116454.8467681,
-    "ast_hash": "c3cc3c3ea3c6ce665e2d140ca91896e3",
+    "mtime": 1781120983.6103942,
+    "ast_hash": "317acbef79a6ab36c994b20a2dad56dc",
     "semantic_hash": ""
   },
   "src/components/Navigation.tsx": {
@@ -135,19 +135,9 @@
     "semantic_hash": "dbc42f631fbd9e670a2e8305bad3a06e"
   },
   "index.html": {
-    "mtime": 1781115925.8457716,
-    "ast_hash": "522f12705c1df0a31d3a88810cc795d9",
+    "mtime": 1781117641.6437466,
+    "ast_hash": "4f3aa03a892691c65ae6cbf236ae56e5",
     "semantic_hash": ""
-  },
-  "public/favicon.svg": {
-    "mtime": 1779138327.275172,
-    "ast_hash": "7e840862161341271697daa99a40d76b",
-    "semantic_hash": "7e840862161341271697daa99a40d76b"
-  },
-  "public/icons.svg": {
-    "mtime": 1779138327.3200893,
-    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
-    "semantic_hash": "3b4fcfcf393eca4d264dca4a4663bc37"
   },
   ".claude/settings.json": {
     "mtime": 1781115052.8733008,
@@ -177,6 +167,21 @@
   "CLAUDE.md": {
     "mtime": 1781115052.871419,
     "ast_hash": "8a6643a420fdad6bfb583523bc6cef16",
+    "semantic_hash": ""
+  },
+  "src/hooks/usePointerParallax.ts": {
+    "mtime": 1781118761.971535,
+    "ast_hash": "b546d00e8c12a6131218918ef8068a73",
+    "semantic_hash": ""
+  },
+  "public/AtayiCEx.png": {
+    "mtime": 1774197881.707563,
+    "ast_hash": "c4298dd983b07b42950629be8960ab98",
+    "semantic_hash": ""
+  },
+  "src/components/RetroTerminal.tsx": {
+    "mtime": 1781121264.0551562,
+    "ast_hash": "fdf3ad116fe980423067193c97bdbe12",
     "semantic_hash": ""
   }
 }
