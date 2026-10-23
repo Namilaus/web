@@ -1,18 +1,8 @@
 import styles from './Footer.module.css';
-
-const links = [
-  { id: 'about', label: 'About' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'contact', label: 'Contact' },
-];
+import { sectionLinks } from '../data/portfolio';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <footer className={styles.footer}>
@@ -23,14 +13,10 @@ export const Footer = () => {
         </p>
 
         <ul className={styles.links}>
-          {links.map((link) => (
+          {sectionLinks.map((link) => (
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(link.id);
-                }}
               >
                 {link.label}
               </a>
@@ -38,12 +24,12 @@ export const Footer = () => {
           ))}
         </ul>
 
-        <button
+        <a
           className={styles.toTop}
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          href="#home"
         >
           Back to top <span aria-hidden="true">↑</span>
-        </button>
+        </a>
       </div>
     </footer>
   );

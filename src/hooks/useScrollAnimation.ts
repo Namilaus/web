@@ -29,11 +29,7 @@ export const useScrollAnimation = () => {
       }
     }
 
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
+    return () => observer.disconnect();
   }, [ref]);
 
   return { ref, isVisible };

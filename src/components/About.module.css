@@ -130,6 +130,31 @@
 
 /* --- Highlights manifest row --- */
 
+.education {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(0, 2fr) minmax(0, 2fr);
+  gap: 28px;
+  border-top: 1px solid var(--line);
+  padding-block: 32px 48px;
+}
+
+.education h3 {
+  color: var(--ink);
+  font-size: var(--text-base);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.education p {
+  color: var(--ink-dim);
+  font-size: var(--text-sm);
+}
+
+.education .educationMeta {
+  color: var(--ink-faint);
+  margin-top: 8px;
+}
+
 .highlights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -172,6 +197,11 @@
 }
 
 @media (max-width: 860px) {
+  .education {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
   .content {
     grid-template-columns: 1fr;
   }

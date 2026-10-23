@@ -98,6 +98,14 @@
   gap: 8px;
 }
 
+.context {
+  color: var(--ink-dim);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  margin-top: 12px;
+  max-width: 35ch;
+}
+
 /* --- Current focus note --- */
 
 .focus {

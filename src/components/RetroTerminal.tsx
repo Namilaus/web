@@ -18,13 +18,13 @@ const BOOT_LINES = [
   'LOADING HARBOR_OS ...',
   '',
   '> SULAIMAN ATAYI',
-  '> SOFTWARE ENGINEER',
+  '> SOFTWARE ENG. STUDENT',
   '> BACKEND / CLOUD / DATA',
   '',
   '> PORT OF HAMBURG',
   '> 53.55 N / 9.99 E',
   '',
-  '> STATUS: OPEN TO WORK',
+  '> DUAL STUDY / EDEKA IT',
   '',
   'C:\\> ',
 ];
@@ -97,7 +97,7 @@ const Terminal = ({ reduceMotion }: { reduceMotion: boolean }) => {
     ctx: CanvasRenderingContext2D;
   } | null>(null);
   const screenMat = useRef<THREE.MeshBasicMaterial>(null);
-  const { invalidate } = useThree();
+  const { invalidate, clock } = useThree();
 
   const getScreen = () => {
     if (!screen.current) {
@@ -128,12 +128,19 @@ const Terminal = ({ reduceMotion }: { reduceMotion: boolean }) => {
   }, []);
 
   useEffect(() => {
+    if (reduceMotion) return;
     const onMove = (e: PointerEvent) => {
       pointer.current.x = (e.clientX / window.innerWidth) * 2 - 1;
       pointer.current.y = (e.clientY / window.innerHeight) * 2 - 1;
     };
     window.addEventListener('pointermove', onMove, { passive: true });
     return () => window.removeEventListener('pointermove', onMove);
+  }, [reduceMotion]);
+
+  useEffect(() => () => {
+    screen.current?.texture.dispose();
+    screen.current = null;
+    document.body.style.cursor = '';
   }, []);
 
   useFrame(({ clock }) => {
@@ -173,11 +180,12 @@ const Terminal = ({ reduceMotion }: { reduceMotion: boolean }) => {
   const togglePower = () => {
     setPowered((p) => {
       if (!p) {
-        boot.current.start = performance.now() / 1000;
+        boot.current.start = clock.elapsedTime;
         boot.current.typed = reduceMotion ? FULL_TEXT.length : 0;
       }
       return !p;
     });
+    invalidate();
   };
 
   // Reset boot clock against the r3f clock on first frame.
@@ -251,16 +259,39 @@ const Terminal = ({ reduceMotion }: { reduceMotion: boolean }) => {
 };
 
 const RetroTerminal = () => {
+  const container = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(false);
   const reduceMotion = useMemo(
     () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
     []
   );
 
+  useEffect(() => {
+    const element = container.current;
+    if (!element) return;
+    const wide = window.matchMedia('(min-width: 1140px)');
+    let inView = false;
+    const update = () => setActive(inView && wide.matches && !document.hidden);
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      update();
+    });
+    observer.observe(element);
+    wide.addEventListener('change', update);
+    document.addEventListener('visibilitychange', update);
+    return () => {
+      observer.disconnect();
+      wide.removeEventListener('change', update);
+      document.removeEventListener('visibilitychange', update);
+    };
+  }, []);
+
   return (
-    <div className={styles.terminal}>
+    <div ref={container} className={styles.terminal} aria-hidden="true">
       <Canvas
         dpr={[1, 1.5]}
-        frameloop={reduceMotion ? 'demand' : 'always'}
+        frameloop={!active ? 'never' : reduceMotion ? 'demand' : 'always'}
+        fallback={<div className={styles.fallback}>Sulaiman Atayi<br />Software Engineering student<br />Backend / Cloud / Automation</div>}
         gl={{ antialias: true, alpha: true, powerPreference: 'low-power' }}
         camera={{ position: [0, 0.45, 6.4], fov: 36 }}
       >

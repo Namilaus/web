@@ -4,12 +4,17 @@ import styles from './ProjectCard.module.css';
 interface ProjectCardProps {
   title: string;
   description: string;
+  detail: string;
+  status: string;
   tech: string[];
+  url: string;
+  flowLabel: string;
+  flow: string[];
   index: number;
   delay?: number;
 }
 
-export const ProjectCard = ({ title, description, tech, index, delay = 0 }: ProjectCardProps) => {
+export const ProjectCard = ({ title, description, detail, status, tech, url, flowLabel, flow, index, delay = 0 }: ProjectCardProps) => {
   return (
     <article
       className={styles.row}
@@ -18,8 +23,17 @@ export const ProjectCard = ({ title, description, tech, index, delay = 0 }: Proj
       <span className={styles.index}>{String(index).padStart(2, '0')}</span>
 
       <div className={styles.body}>
+        <p className={styles.status}>{status}</p>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
+        <p className={styles.detail}>{detail}</p>
+        <div className={styles.flow}>
+          <p className={styles.flowLabel}>{flowLabel}</p>
+          <ol>{flow.map((step) => <li key={step}>{step}</li>)}</ol>
+        </div>
+        <a className={styles.sourceLink} href={url} target="_blank" rel="noopener noreferrer" aria-label={`View ${title} source on GitHub (opens in a new tab)`}>
+          View source on GitHub <span aria-hidden="true">↗</span>
+        </a>
       </div>
 
       <p className={styles.tech}>

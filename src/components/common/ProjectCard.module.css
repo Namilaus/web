@@ -49,6 +49,69 @@
   max-width: 520px;
 }
 
+.body {
+  min-width: 0;
+}
+
+.status,
+.flowLabel {
+  color: var(--amber);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  margin-bottom: 12px;
+}
+
+.detail {
+  color: var(--ink-dim);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  max-width: 60ch;
+  margin-top: 14px;
+}
+
+.flow {
+  margin: 24px 0;
+  padding: 18px 0;
+  border-block: 1px solid var(--line);
+}
+
+.flowLabel {
+  color: var(--ink-faint);
+  margin-bottom: 10px;
+}
+
+.flow ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink);
+  font-size: var(--text-sm);
+}
+
+.flow li:not(:last-child)::after {
+  content: '→';
+  display: inline-block;
+  padding-inline: 12px;
+  color: var(--amber);
+}
+
+.sourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  color: var(--amber);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-underline-offset: 6px;
+}
+
+.sourceLink:hover {
+  color: var(--ink);
+}
+
 .tech {
   font-family: var(--font-mono);
   font-size: var(--text-xs);

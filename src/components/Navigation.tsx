@@ -1,17 +1,13 @@
 import { useEffect, useState } from 'react';
-import { useTheme } from '../hooks/useTheme';
+import { sectionLinks } from '../data/portfolio';
 import styles from './Navigation.module.css';
 
-const links = [
-  { id: 'about', label: 'About' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'contact', label: 'Contact' },
-];
+interface NavigationProps {
+  theme: 'light' | 'dark';
+  toggleTheme: () => void;
+}
 
-export const Navigation = () => {
-  const { theme, toggleTheme } = useTheme();
+export const Navigation = ({ theme, toggleTheme }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,35 +18,36 @@ export const Navigation = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false);
-  };
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+        document.getElementById('menu-toggle')?.focus();
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isOpen]);
 
   return (
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+    <nav aria-label="Main navigation" className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <a
           href="#home"
           className={styles.brand}
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection('home');
-          }}
+          onClick={() => setIsOpen(false)}
         >
           S.&thinsp;Atayi
           <span className={styles.brandPort}>/ HH</span>
         </a>
 
-        <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
-          {links.map((link) => (
+        <ul id="navigation-menu" className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+          {sectionLinks.map((link) => (
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(link.id);
-                }}
+                onClick={() => setIsOpen(false)}
               >
                 {link.label}
               </a>
@@ -69,10 +66,12 @@ export const Navigation = () => {
           </button>
 
           <button
+            id="menu-toggle"
             className={`${styles.hamburger} ${isOpen ? styles.active : ''}`}
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isOpen}
+            aria-controls="navigation-menu"
           >
             <span></span>
             <span></span>

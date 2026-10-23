@@ -411,6 +411,24 @@
       "norm_label": "vite"
     },
     {
+      "label": "portfolio-smoke.mjs",
+      "file_type": "code",
+      "source_file": "scripts/portfolio-smoke.mjs",
+      "source_location": "L1",
+      "id": "scripts_portfolio_smoke",
+      "community": 33,
+      "norm_label": "portfolio-smoke.mjs"
+    },
+    {
+      "label": "get()",
+      "file_type": "code",
+      "source_file": "scripts/portfolio-smoke.mjs",
+      "source_location": "L96",
+      "id": "scripts_portfolio_smoke_get",
+      "community": 33,
+      "norm_label": "get()"
+    },
+    {
       "label": "skills-lock.json",
       "file_type": "code",
       "source_file": "skills-lock.json",
@@ -522,7 +540,7 @@
       "label": "highlights",
       "file_type": "code",
       "source_file": "src/components/About.tsx",
-      "source_location": "L11",
+      "source_location": "L10",
       "id": "components_about_highlights",
       "community": 0,
       "norm_label": "highlights"
@@ -531,7 +549,7 @@
       "label": "About()",
       "file_type": "code",
       "source_file": "src/components/About.tsx",
-      "source_location": "L17",
+      "source_location": "L16",
       "id": "components_about_about",
       "community": 0,
       "norm_label": "about()"
@@ -573,19 +591,10 @@
       "norm_label": "experience.tsx"
     },
     {
-      "label": "experiences",
-      "file_type": "code",
-      "source_file": "src/components/Experience.tsx",
-      "source_location": "L5",
-      "id": "components_experience_experiences",
-      "community": 0,
-      "norm_label": "experiences"
-    },
-    {
       "label": "Experience()",
       "file_type": "code",
       "source_file": "src/components/Experience.tsx",
-      "source_location": "L44",
+      "source_location": "L6",
       "id": "components_experience_experience",
       "community": 0,
       "norm_label": "experience()"
@@ -600,19 +609,10 @@
       "norm_label": "footer.tsx"
     },
     {
-      "label": "links",
-      "file_type": "code",
-      "source_file": "src/components/Footer.tsx",
-      "source_location": "L3",
-      "id": "components_footer_links",
-      "community": 0,
-      "norm_label": "links"
-    },
-    {
       "label": "Footer()",
       "file_type": "code",
       "source_file": "src/components/Footer.tsx",
-      "source_location": "L10",
+      "source_location": "L4",
       "id": "components_footer_footer",
       "community": 0,
       "norm_label": "footer()"
@@ -630,7 +630,7 @@
       "label": "RetroTerminal",
       "file_type": "code",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "components_hero_retroterminal",
       "community": 28,
       "norm_label": "retroterminal"
@@ -639,7 +639,7 @@
       "label": "useTerminalEnabled()",
       "file_type": "code",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "id": "components_hero_useterminalenabled",
       "community": 28,
       "norm_label": "useterminalenabled()"
@@ -648,7 +648,7 @@
       "label": "ChartLines()",
       "file_type": "code",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L33",
+      "source_location": "L34",
       "id": "components_hero_chartlines",
       "community": 28,
       "norm_label": "chartlines()"
@@ -657,7 +657,7 @@
       "label": "Hero()",
       "file_type": "code",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L57",
+      "source_location": "L58",
       "id": "components_hero_hero",
       "community": 28,
       "norm_label": "hero()"
@@ -672,19 +672,19 @@
       "norm_label": "navigation.tsx"
     },
     {
-      "label": "links",
+      "label": "NavigationProps",
       "file_type": "code",
       "source_file": "src/components/Navigation.tsx",
       "source_location": "L5",
-      "id": "components_navigation_links",
+      "id": "components_navigation_navigationprops",
       "community": 0,
-      "norm_label": "links"
+      "norm_label": "navigationprops"
     },
     {
       "label": "Navigation()",
       "file_type": "code",
       "source_file": "src/components/Navigation.tsx",
-      "source_location": "L13",
+      "source_location": "L10",
       "id": "components_navigation_navigation",
       "community": 0,
       "norm_label": "navigation()"
@@ -699,13 +699,13 @@
       "norm_label": "projects.tsx"
     },
     {
-      "label": "projects",
+      "label": "Projects()",
       "file_type": "code",
       "source_file": "src/components/Projects.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "components_projects_projects",
       "community": 0,
-      "norm_label": "projects"
+      "norm_label": "projects()"
     },
     {
       "label": "RetroTerminal.tsx",
@@ -756,7 +756,7 @@
       "label": "RetroTerminal()",
       "file_type": "code",
       "source_file": "src/components/RetroTerminal.tsx",
-      "source_location": "L253",
+      "source_location": "L261",
       "id": "components_retroterminal_retroterminal",
       "community": 29,
       "norm_label": "retroterminal()"
@@ -771,19 +771,10 @@
       "norm_label": "skills.tsx"
     },
     {
-      "label": "skillCategories",
-      "file_type": "code",
-      "source_file": "src/components/Skills.tsx",
-      "source_location": "L5",
-      "id": "components_skills_skillcategories",
-      "community": 0,
-      "norm_label": "skillcategories"
-    },
-    {
       "label": "Skills()",
       "file_type": "code",
       "source_file": "src/components/Skills.tsx",
-      "source_location": "L34",
+      "source_location": "L6",
       "id": "components_skills_skills",
       "community": 0,
       "norm_label": "skills()"
@@ -810,10 +801,46 @@
       "label": "ProjectCard()",
       "file_type": "code",
       "source_file": "src/components/common/ProjectCard.tsx",
-      "source_location": "L12",
+      "source_location": "L17",
       "id": "common_projectcard_projectcard",
       "community": 0,
       "norm_label": "projectcard()"
+    },
+    {
+      "label": "SceneBoundary.tsx",
+      "file_type": "code",
+      "source_file": "src/components/common/SceneBoundary.tsx",
+      "source_location": "L1",
+      "id": "common_sceneboundary",
+      "community": 28,
+      "norm_label": "sceneboundary.tsx"
+    },
+    {
+      "label": "SceneBoundary",
+      "file_type": "code",
+      "source_file": "src/components/common/SceneBoundary.tsx",
+      "source_location": "L5",
+      "id": "common_sceneboundary_sceneboundary",
+      "community": 28,
+      "norm_label": "sceneboundary"
+    },
+    {
+      "label": ".getDerivedStateFromError()",
+      "file_type": "code",
+      "source_file": "src/components/common/SceneBoundary.tsx",
+      "source_location": "L8",
+      "id": "common_sceneboundary_sceneboundary_getderivedstatefromerror",
+      "community": 28,
+      "norm_label": ".getderivedstatefromerror()"
+    },
+    {
+      "label": ".render()",
+      "file_type": "code",
+      "source_file": "src/components/common/SceneBoundary.tsx",
+      "source_location": "L12",
+      "id": "common_sceneboundary_sceneboundary_render",
+      "community": 28,
+      "norm_label": ".render()"
     },
     {
       "label": "SkillBadge.tsx",
@@ -868,6 +895,51 @@
       "id": "common_timelineitem_timelineitem",
       "community": 0,
       "norm_label": "timelineitem()"
+    },
+    {
+      "label": "portfolio.ts",
+      "file_type": "code",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L1",
+      "id": "data_portfolio",
+      "community": 0,
+      "norm_label": "portfolio.ts"
+    },
+    {
+      "label": "sectionLinks",
+      "file_type": "code",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L1",
+      "id": "data_portfolio_sectionlinks",
+      "community": 0,
+      "norm_label": "sectionlinks"
+    },
+    {
+      "label": "projects",
+      "file_type": "code",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L9",
+      "id": "data_portfolio_projects",
+      "community": 0,
+      "norm_label": "projects"
+    },
+    {
+      "label": "experiences",
+      "file_type": "code",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L42",
+      "id": "data_portfolio_experiences",
+      "community": 0,
+      "norm_label": "experiences"
+    },
+    {
+      "label": "skillCategories",
+      "file_type": "code",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L85",
+      "id": "data_portfolio_skillcategories",
+      "community": 0,
+      "norm_label": "skillcategories"
     },
     {
       "label": "usePointerParallax.ts",
@@ -1635,13 +1707,346 @@
       "norm_label": "readme.md"
     },
     {
+      "label": "Sulaiman Atayi's portfolio",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_sulaiman_atayi_s_portfolio",
+      "community": 27,
+      "norm_label": "sulaiman atayi's portfolio"
+    },
+    {
+      "label": "Development",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "id": "readme_development",
+      "community": 27,
+      "norm_label": "development"
+    },
+    {
+      "label": "Validation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L12",
+      "id": "readme_validation",
+      "community": 27,
+      "norm_label": "validation"
+    },
+    {
+      "label": "Updating content",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "id": "readme_updating_content",
+      "community": 27,
+      "norm_label": "updating content"
+    },
+    {
+      "label": "2026-10-23-portfolio-content-plan.md",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L1",
+      "id": "plans_2026_10_23_portfolio_content_plan",
+      "community": 30,
+      "norm_label": "2026-10-23-portfolio-content-plan.md"
+    },
+    {
+      "label": "Portfolio content change plan",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L1",
+      "id": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "community": 30,
+      "norm_label": "portfolio content change plan"
+    },
+    {
+      "label": "Scope and evidence",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L7",
+      "id": "plans_2026_10_23_portfolio_content_plan_scope_and_evidence",
+      "community": 30,
+      "norm_label": "scope and evidence"
+    },
+    {
+      "label": "Direction",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L13",
+      "id": "plans_2026_10_23_portfolio_content_plan_direction",
+      "community": 30,
+      "norm_label": "direction"
+    },
+    {
+      "label": "Priority 1: Correct the professional story",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L19",
+      "id": "plans_2026_10_23_portfolio_content_plan_priority_1_correct_the_professional_story",
+      "community": 30,
+      "norm_label": "priority 1: correct the professional story"
+    },
+    {
+      "label": "Hero and metadata",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L21",
+      "id": "plans_2026_10_23_portfolio_content_plan_hero_and_metadata",
+      "community": 30,
+      "norm_label": "hero and metadata"
+    },
+    {
+      "label": "EDEKA experience",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L32",
+      "id": "plans_2026_10_23_portfolio_content_plan_edeka_experience",
+      "community": 30,
+      "norm_label": "edeka experience"
+    },
+    {
+      "label": "Earlier experience",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L44",
+      "id": "plans_2026_10_23_portfolio_content_plan_earlier_experience",
+      "community": 30,
+      "norm_label": "earlier experience"
+    },
+    {
+      "label": "Priority 2: Add evidence and academic context",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L53",
+      "id": "plans_2026_10_23_portfolio_content_plan_priority_2_add_evidence_and_academic_context",
+      "community": 30,
+      "norm_label": "priority 2: add evidence and academic context"
+    },
+    {
+      "label": "About and education",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L55",
+      "id": "plans_2026_10_23_portfolio_content_plan_about_and_education",
+      "community": 30,
+      "norm_label": "about and education"
+    },
+    {
+      "label": "Featured projects",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L66",
+      "id": "plans_2026_10_23_portfolio_content_plan_featured_projects",
+      "community": 30,
+      "norm_label": "featured projects"
+    },
+    {
+      "label": "Skills",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L79",
+      "id": "plans_2026_10_23_portfolio_content_plan_skills",
+      "community": 30,
+      "norm_label": "skills"
+    },
+    {
+      "label": "Priority 3: Make the page easier to assess",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L91",
+      "id": "plans_2026_10_23_portfolio_content_plan_priority_3_make_the_page_easier_to_assess",
+      "community": 30,
+      "norm_label": "priority 3: make the page easier to assess"
+    },
+    {
+      "label": "Separate technical work already identified",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L102",
+      "id": "plans_2026_10_23_portfolio_content_plan_separate_technical_work_already_identified",
+      "community": 30,
+      "norm_label": "separate technical work already identified"
+    },
+    {
+      "label": "Facts to resolve before final copy",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L106",
+      "id": "plans_2026_10_23_portfolio_content_plan_facts_to_resolve_before_final_copy",
+      "community": 30,
+      "norm_label": "facts to resolve before final copy"
+    },
+    {
+      "label": "Completion checks for eventual implementation",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L116",
+      "id": "plans_2026_10_23_portfolio_content_plan_completion_checks_for_eventual_implementation",
+      "community": 30,
+      "norm_label": "completion checks for eventual implementation"
+    },
+    {
+      "label": "2026-10-23-portfolio-implementation-notes.md",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-implementation-notes.md",
+      "source_location": "L1",
+      "id": "plans_2026_10_23_portfolio_implementation_notes",
+      "community": 32,
+      "norm_label": "2026-10-23-portfolio-implementation-notes.md"
+    },
+    {
+      "label": "Portfolio implementation notes",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-implementation-notes.md",
+      "source_location": "L1",
+      "id": "plans_2026_10_23_portfolio_implementation_notes_portfolio_implementation_notes",
+      "community": 32,
+      "norm_label": "portfolio implementation notes"
+    },
+    {
+      "label": "Verification",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-implementation-notes.md",
+      "source_location": "L15",
+      "id": "plans_2026_10_23_portfolio_implementation_notes_verification",
+      "community": 32,
+      "norm_label": "verification"
+    },
+    {
+      "label": "Follow-up: confirmed public domain",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-10-23-portfolio-implementation-notes.md",
+      "source_location": "L27",
+      "id": "plans_2026_10_23_portfolio_implementation_notes_follow_up_confirmed_public_domain",
+      "community": 32,
+      "norm_label": "follow-up: confirmed public domain"
+    },
+    {
+      "label": "portfolio-project-shortlist.md",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L1",
+      "id": "research_portfolio_project_shortlist",
+      "community": 31,
+      "norm_label": "portfolio-project-shortlist.md"
+    },
+    {
+      "label": "Portfolio project shortlist",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L1",
+      "id": "research_portfolio_project_shortlist_portfolio_project_shortlist",
+      "community": 31,
+      "norm_label": "portfolio project shortlist"
+    },
+    {
+      "label": "Recommended featured projects",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L5",
+      "id": "research_portfolio_project_shortlist_recommended_featured_projects",
+      "community": 31,
+      "norm_label": "recommended featured projects"
+    },
+    {
+      "label": "1. GitOps infrastructure platform \u2014 `argocd_platform`",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L7",
+      "id": "research_portfolio_project_shortlist_1_gitops_infrastructure_platform_argocd_platform",
+      "community": 31,
+      "norm_label": "1. gitops infrastructure platform \u2014 `argocd_platform`"
+    },
+    {
+      "label": "2. Shared wishlist interface \u2014 `wishList`",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L15",
+      "id": "research_portfolio_project_shortlist_2_shared_wishlist_interface_wishlist",
+      "community": 31,
+      "norm_label": "2. shared wishlist interface \u2014 `wishlist`"
+    },
+    {
+      "label": "3. Video and playlist link tool \u2014 `ytdownloader` (conditional)",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L23",
+      "id": "research_portfolio_project_shortlist_3_video_and_playlist_link_tool_ytdownloader_conditional",
+      "community": 31,
+      "norm_label": "3. video and playlist link tool \u2014 `ytdownloader` (conditional)"
+    },
+    {
+      "label": "Optional alternatives",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L31",
+      "id": "research_portfolio_project_shortlist_optional_alternatives",
+      "community": 31,
+      "norm_label": "optional alternatives"
+    },
+    {
+      "label": "Lower priority for featured cards",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L36",
+      "id": "research_portfolio_project_shortlist_lower_priority_for_featured_cards",
+      "community": 31,
+      "norm_label": "lower priority for featured cards"
+    },
+    {
+      "label": "Portfolio presentation",
+      "file_type": "document",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L43",
+      "id": "research_portfolio_project_shortlist_portfolio_presentation",
+      "community": 31,
+      "norm_label": "portfolio presentation"
+    },
+    {
+      "label": "experiences",
+      "file_type": "code",
+      "source_file": "src/components/Experience.tsx",
+      "source_location": "L5",
+      "community": 0,
+      "norm_label": "experiences",
+      "id": "components_experience_experiences"
+    },
+    {
+      "label": "links",
+      "file_type": "code",
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L3",
+      "community": 0,
+      "norm_label": "links",
+      "id": "components_footer_links"
+    },
+    {
+      "label": "links",
+      "file_type": "code",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L5",
+      "community": 0,
+      "norm_label": "links",
+      "id": "components_navigation_links"
+    },
+    {
+      "label": "skillCategories",
+      "file_type": "code",
+      "source_file": "src/components/Skills.tsx",
+      "source_location": "L5",
+      "community": 0,
+      "norm_label": "skillcategories",
+      "id": "components_skills_skillcategories"
+    },
+    {
       "label": "upcoming...",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "id": "readme_upcoming",
       "community": 27,
-      "norm_label": "upcoming..."
+      "norm_label": "upcoming...",
+      "id": "readme_upcoming"
     },
     {
       "label": "HarborWater",
@@ -2902,6 +3307,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/portfolio-smoke.mjs",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_portfolio_smoke",
+      "target": "scripts_portfolio_smoke_get"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "skills-lock.json",
       "source_location": "L3",
       "weight": 1.0,
@@ -3362,6 +3777,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Experience.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_experience",
+      "target": "data_portfolio"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Experience.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_experience",
+      "target": "data_portfolio_experiences"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Experience.tsx",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3409,6 +3846,50 @@
       "confidence_score": 1.0,
       "source": "components_footer",
       "target": "components_footer_links"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_footer",
+      "target": "data_portfolio"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_footer",
+      "target": "data_portfolio_sectionlinks"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "common_sceneboundary"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "common_sceneboundary_sceneboundary"
     },
     {
       "relation": "contains",
@@ -3546,6 +4027,38 @@
       "target": "components_navigation_navigation"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_navigation",
+      "target": "components_navigation_navigationprops"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_navigation",
+      "target": "data_portfolio"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_navigation",
+      "target": "data_portfolio_sectionlinks"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3609,6 +4122,28 @@
       "confidence_score": 1.0,
       "source": "components_projects",
       "target": "components_projects_projects"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Projects.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_projects",
+      "target": "data_portfolio"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Projects.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_projects",
+      "target": "data_portfolio_projects"
     },
     {
       "relation": "imports_from",
@@ -3740,6 +4275,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Skills.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_skills",
+      "target": "data_portfolio"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Skills.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_skills",
+      "target": "data_portfolio_skillcategories"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Skills.tsx",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3791,6 +4348,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/common/SceneBoundary.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "common_sceneboundary",
+      "target": "common_sceneboundary_sceneboundary"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/SceneBoundary.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "common_sceneboundary_sceneboundary",
+      "target": "common_sceneboundary_sceneboundary_getderivedstatefromerror"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/SceneBoundary.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "common_sceneboundary_sceneboundary",
+      "target": "common_sceneboundary_sceneboundary_render"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/common/SkillBadge.tsx",
       "source_location": "L8",
       "weight": 1.0,
@@ -3827,6 +4414,46 @@
       "confidence_score": 1.0,
       "source": "common_timelineitem",
       "target": "common_timelineitem_timelineitemprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_portfolio",
+      "target": "data_portfolio_experiences"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_portfolio",
+      "target": "data_portfolio_projects"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_portfolio",
+      "target": "data_portfolio_sectionlinks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/portfolio.ts",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_portfolio",
+      "target": "data_portfolio_skillcategories"
     },
     {
       "relation": "contains",
@@ -4736,7 +5363,307 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme",
+      "target": "readme_sulaiman_atayi_s_portfolio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme",
       "target": "readme_upcoming"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_sulaiman_atayi_s_portfolio",
+      "target": "readme_development"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_sulaiman_atayi_s_portfolio",
+      "target": "readme_updating_content"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_sulaiman_atayi_s_portfolio",
+      "target": "readme_validation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L114",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_completion_checks_for_eventual_implementation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_direction"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_facts_to_resolve_before_final_copy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_priority_1_correct_the_professional_story"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_priority_2_add_evidence_and_academic_context"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_priority_3_make_the_page_easier_to_assess"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_scope_and_evidence"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_portfolio_content_change_plan",
+      "target": "plans_2026_10_23_portfolio_content_plan_separate_technical_work_already_identified"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_priority_1_correct_the_professional_story",
+      "target": "plans_2026_10_23_portfolio_content_plan_earlier_experience"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_priority_1_correct_the_professional_story",
+      "target": "plans_2026_10_23_portfolio_content_plan_edeka_experience"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_priority_1_correct_the_professional_story",
+      "target": "plans_2026_10_23_portfolio_content_plan_hero_and_metadata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_priority_2_add_evidence_and_academic_context",
+      "target": "plans_2026_10_23_portfolio_content_plan_about_and_education"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_priority_2_add_evidence_and_academic_context",
+      "target": "plans_2026_10_23_portfolio_content_plan_featured_projects"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-content-plan.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_content_plan_priority_2_add_evidence_and_academic_context",
+      "target": "plans_2026_10_23_portfolio_content_plan_skills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-implementation-notes.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_implementation_notes",
+      "target": "plans_2026_10_23_portfolio_implementation_notes_portfolio_implementation_notes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-implementation-notes.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "plans_2026_10_23_portfolio_implementation_notes_portfolio_implementation_notes",
+      "target": "plans_2026_10_23_portfolio_implementation_notes_follow_up_confirmed_public_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-10-23-portfolio-implementation-notes.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_2026_10_23_portfolio_implementation_notes_portfolio_implementation_notes",
+      "target": "plans_2026_10_23_portfolio_implementation_notes_verification"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "research_portfolio_project_shortlist",
+      "target": "research_portfolio_project_shortlist_portfolio_project_shortlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "research_portfolio_project_shortlist_portfolio_project_shortlist",
+      "target": "research_portfolio_project_shortlist_lower_priority_for_featured_cards"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "research_portfolio_project_shortlist_portfolio_project_shortlist",
+      "target": "research_portfolio_project_shortlist_optional_alternatives"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "research_portfolio_project_shortlist_portfolio_project_shortlist",
+      "target": "research_portfolio_project_shortlist_portfolio_presentation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "research_portfolio_project_shortlist_portfolio_project_shortlist",
+      "target": "research_portfolio_project_shortlist_recommended_featured_projects"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "research_portfolio_project_shortlist_recommended_featured_projects",
+      "target": "research_portfolio_project_shortlist_1_gitops_infrastructure_platform_argocd_platform"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "research_portfolio_project_shortlist_recommended_featured_projects",
+      "target": "research_portfolio_project_shortlist_2_shared_wishlist_interface_wishlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/portfolio-project-shortlist.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "research_portfolio_project_shortlist_recommended_featured_projects",
+      "target": "research_portfolio_project_shortlist_3_video_and_playlist_link_tool_ytdownloader_conditional"
     },
     {
       "relation": "contains",
@@ -5382,5 +6309,5 @@
       "source_file": "public/icons.svg"
     }
   ],
-  "built_at_commit": "d1675f40729c124d3b26481faf9c8b16285a71ab"
+  "built_at_commit": "b41fbe6fafc2544abc52f8b71745eaa1d438c574"
 }

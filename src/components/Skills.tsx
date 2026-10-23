@@ -1,35 +1,7 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { SkillBadge } from './common/SkillBadge';
+import { skillCategories } from '../data/portfolio';
 import styles from './Skills.module.css';
-
-const skillCategories = [
-  {
-    code: 'BCK',
-    title: 'Backend Development',
-    skills: ['JavaScript', 'Node.js', 'Next.js', 'REST APIs', 'Backend Development'],
-  },
-  {
-    code: 'CLD',
-    title: 'Cloud & Infrastructure',
-    skills: [
-      'Amazon Web Services (AWS)',
-      'IT Infrastructure',
-      'System Configuration',
-      'Networking',
-      'System Optimization',
-    ],
-  },
-  {
-    code: 'DAT',
-    title: 'Data & Analytics',
-    skills: ['Power BI', 'Dashboard Automation', 'Data Visualization', 'Data Analysis', 'Database Design'],
-  },
-  {
-    code: 'ENG',
-    title: 'Software Engineering',
-    skills: ['Software Architecture', 'Problem Solving', 'Technical Analysis', 'Agile Collaboration', 'Debugging'],
-  },
-];
 
 export const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -38,7 +10,7 @@ export const Skills = () => {
     <section ref={ref} id="skills" className={styles.skills}>
       <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
         <header className={styles.header}>
-          <span className={styles.record}>Rec 02 — What I Know</span>
+          <span className={styles.record}>Rec 04 — Tools & Practice</span>
           <h2 className={styles.title}>Technical Skills</h2>
         </header>
 
@@ -46,7 +18,10 @@ export const Skills = () => {
           {skillCategories.map((category, i) => (
             <div key={category.code} className={styles.row} style={{ transitionDelay: `${i * 110}ms` }}>
               <span className={styles.code}>{category.code}</span>
-              <h3 className={styles.category}>{category.title}</h3>
+              <div>
+                <h3 className={styles.category}>{category.title}</h3>
+                <p className={styles.context}>{category.context}</p>
+              </div>
               <div className={styles.skillList}>
                 {category.skills.map((skill) => (
                   <SkillBadge key={skill} name={skill} />
@@ -59,9 +34,8 @@ export const Skills = () => {
         <aside className={styles.focus}>
           <span className={styles.focusLabel}>Current Focus</span>
           <p className={styles.focusText}>
-            I'm particularly interested in backend systems, cloud technologies, automation, and
-            data engineering. I enjoy combining software engineering principles with business
-            understanding to build scalable, efficient solutions.
+            I'm deepening my understanding of cloud infrastructure and software delivery,
+            combining practical work at EDEKA IT with experiments in my own GitOps homelab.
           </p>
         </aside>
       </div>

@@ -14,6 +14,15 @@
   height: 100%;
 }
 
+.fallback {
+  margin: 20% 8%;
+  padding: 32px;
+  border: 1px solid var(--line-strong);
+  background: var(--bg-raised);
+  color: var(--amber);
+  font: var(--text-base) / 2 var(--font-mono);
+}
+
 /* Below this the terminal would crowd the text — hero stays 2D. */
 @media (max-width: 1139px) {
   .terminal {

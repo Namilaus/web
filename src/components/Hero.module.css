@@ -200,6 +200,12 @@
   transform: translateY(-2px);
 }
 
+.primaryBtn,
+.secondaryBtn {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .secondaryBtn {
   background: transparent;
   color: var(--ink);

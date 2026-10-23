@@ -10,7 +10,7 @@
   --bg-overlay: rgba(11, 18, 28, 0.88);
   --ink: #e9eef4;
   --ink-dim: #93a2b4;
-  --ink-faint: #5c6b7c;
+  --ink-faint: #8b9aac;
   --amber: #f2a33c;
   --amber-soft: rgba(242, 163, 60, 0.12);
   --chart: #5c90b0;
@@ -62,7 +62,7 @@
   --bg-overlay: rgba(234, 237, 240, 0.88);
   --ink: #121a24;
   --ink-dim: #46566a;
-  --ink-faint: #7c8a9a;
+  --ink-faint: #586779;
   --amber: #9a5e07;
   --amber-soft: rgba(154, 94, 7, 0.1);
   --chart: #2f6a8c;
@@ -83,6 +83,30 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+section[id],
+main[id] {
+  scroll-margin-top: 88px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 16px;
+  z-index: 200;
+  padding: 12px 20px;
+  color: var(--bg);
+  background: var(--amber);
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+main:focus {
+  outline: none;
 }
 
 body {

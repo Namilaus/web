@@ -2,16 +2,15 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from './About.module.css';
 
 const traits = [
-  { label: 'Analytical', desc: 'Strong problem-solving mindset' },
-  { label: 'Fast Learner', desc: 'Quickly adapt to new technologies' },
-  { label: 'Technical', desc: 'Hands-on experience with systems' },
-  { label: 'Growth-Oriented', desc: 'Continuously improving skills' },
+  { label: 'Cloud & CI', desc: 'Infrastructure monitoring, automation, and code quality checks' },
+  { label: 'Backend & APIs', desc: 'Practical experience with Node.js, Next.js, and MySQL' },
+  { label: 'Data & reporting', desc: 'Power BI dashboards for operational visibility' },
 ];
 
 const highlights = [
-  { number: '2+', label: 'Years of Experience' },
-  { number: '5+', label: 'Tech Stack Areas' },
-  { number: '3', label: 'Major Projects' },
+  { number: 'Since 2025', label: 'Dual study at EDEKA IT' },
+  { number: 'Cloud & CI', label: 'Current practical focus' },
+  { number: 'Hands-on', label: 'Learning through personal projects' },
 ];
 
 export const About = () => {
@@ -21,26 +20,24 @@ export const About = () => {
     <section ref={ref} id="about" className={styles.about}>
       <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
         <header className={styles.header}>
-          <span className={styles.record}>Rec 01 — About Me</span>
-          <h2 className={styles.title}>Who I Am</h2>
+          <span className={styles.record}>Rec 03 — About Me</span>
+          <h2 className={styles.title}>About &amp; Education</h2>
         </header>
 
         <div className={styles.content}>
           <div className={styles.text}>
             <p className={styles.lead}>
-              I'm a Software Engineering student and dual-study trainee at EDEKA IT in Hamburg.
-              My passion lies in backend development, cloud technologies, automation, and
-              data-driven systems.
+              I'm a Software Engineering student at NORDAKADEMIE, combining my degree
+              with practical experience at EDEKA IT in Hamburg.
             </p>
             <p>
-              Through internships and practical experience, I've gained hands-on knowledge in
-              software development, IT infrastructure, database systems, Power BI dashboards,
-              and backend technologies like Node.js and MySQL.
+              My work brings together cloud infrastructure, automated code checks, and
+              Power BI reporting. Earlier internships introduced me to backend development,
+              databases, system configuration, and troubleshooting.
             </p>
             <p>
-              I enjoy building efficient systems, solving technical challenges, and continuously
-              improving my skills in modern software engineering and cloud environments. I
-              believe in learning by doing and applying new knowledge to real-world problems.
+              Outside my studies, I explore how systems work by building them: from a
+              GitOps Kubernetes homelab to web interfaces and Python data pipelines.
             </p>
           </div>
 
@@ -55,6 +52,20 @@ export const About = () => {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className={styles.education}>
+          <span className={styles.record}>Education</span>
+          <div>
+            <h3>NORDAKADEMIE Hochschule der Wirtschaft</h3>
+            <p>B.Sc. Software Engineering · Dual study with EDEKA IT</p>
+            <p className={styles.educationMeta}>August 2025 – Expected November 2028</p>
+          </div>
+          <div>
+            <h3>August-Griese-Berufskolleg</h3>
+            <p>Fachhochschulreife · Information Technology</p>
+            <p className={styles.educationMeta}>August 2022 – July 2025</p>
+          </div>
         </div>
 
         <dl className={styles.highlights}>

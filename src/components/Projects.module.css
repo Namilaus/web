@@ -93,6 +93,8 @@
 }
 
 .button {
+  display: inline-block;
+  text-decoration: none;
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   font-weight: 500;

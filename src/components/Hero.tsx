@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { usePointerParallax } from '../hooks/usePointerParallax';
+import { SceneBoundary } from './common/SceneBoundary';
 import styles from './Hero.module.css';
 
 const RetroTerminal = lazy(() => import('./RetroTerminal'));
@@ -58,18 +59,16 @@ export const Hero = () => {
   const heroRef = usePointerParallax<HTMLElement>();
   const terminalEnabled = useTerminalEnabled();
 
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section id="home" ref={heroRef} className={styles.hero}>
       <ChartLines />
       <div className={styles.sonar} aria-hidden="true" />
       {terminalEnabled && (
-        <Suspense fallback={null}>
-          <RetroTerminal />
-        </Suspense>
+        <SceneBoundary>
+          <Suspense fallback={null}>
+            <RetroTerminal />
+          </Suspense>
+        </SceneBoundary>
       )}
 
       <div className={styles.container}>
@@ -90,38 +89,39 @@ export const Hero = () => {
         </h1>
 
         <div className={styles.roles}>
-          <span>Software Engineer</span>
+          <span>Software Engineering Student</span>
           <span className={styles.roleSep} aria-hidden="true">/</span>
-          <span>Backend Developer</span>
+          <span>Backend &amp; Cloud</span>
           <span className={styles.roleSep} aria-hidden="true">/</span>
-          <span>Cloud Enthusiast</span>
+          <span>Automation</span>
         </div>
 
         <p className={styles.description}>
-          I'm a software engineering student passionate about building scalable systems,
-          automating workflows, and solving technical challenges. Based in Hamburg, Germany.
+          I'm a Software Engineering student combining dual study at NORDAKADEMIE with
+          practical work at EDEKA IT in Hamburg. I work on cloud monitoring, CI pipelines,
+          and Power BI dashboards, and explore backend and infrastructure projects of my own.
         </p>
 
         <div className={styles.cta}>
-          <button className={styles.primaryBtn} onClick={() => scrollToSection('projects')}>
+          <a className={styles.primaryBtn} href="#projects">
             View My Work
-          </button>
-          <button className={styles.secondaryBtn} onClick={() => scrollToSection('contact')}>
+          </a>
+          <a className={styles.secondaryBtn} href="#contact">
             Get in Touch
-          </button>
+          </a>
         </div>
       </div>
 
       <div className={styles.registry}>
         <div className={styles.registryItem}>
           <span className={styles.registryKey}>Cargo</span>
-          <span className={styles.registryValue}>Backend Dev · Cloud &amp; AWS · Data Analytics</span>
+          <span className={styles.registryValue}>Backend · Cloud infrastructure · Automation</span>
         </div>
         <div className={styles.registryItem}>
           <span className={styles.registryKey}>Status</span>
           <span className={styles.registryValue}>
             <span className={styles.statusDot} aria-hidden="true" />
-            Open to new projects
+            Dual student at EDEKA IT
           </span>
         </div>
         <div className={styles.registryScroll}>

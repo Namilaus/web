@@ -17,14 +17,14 @@ export const Contact = () => {
         </header>
 
         <h2 className={styles.title}>
-          Let's Build
+          Let's Talk
           <br />
-          Something Together<span className={styles.titleMark}>.</span>
+          About What You're Building<span className={styles.titleMark}>.</span>
         </h2>
 
         <p className={styles.description}>
-          I'm always interested in hearing about new projects and opportunities. Whether you
-          have a question or just want to say hello, feel free to reach out!
+          Have a question about my work, a technical idea to exchange, or a project you'd
+          like to discuss? Send me an email or connect with me on LinkedIn.
         </p>
 
         <a className={styles.email} href="mailto:sulaiman.atayi@hotmail.com">
@@ -49,7 +49,7 @@ export const Contact = () => {
             ))}
           </ul>
 
-          <p className={styles.location}>Hamburg, Germany — 53.55° N / 9.99° E</p>
+          <p className={styles.location}>Dual study with EDEKA IT · Hamburg, Germany</p>
         </div>
       </div>
     </section>

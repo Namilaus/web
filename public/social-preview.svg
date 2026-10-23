@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b121c"/>
+  <g fill="none" stroke="#5c90b0" stroke-width="2" opacity="0.3">
+    <path d="M-50 130C230 20 530 240 850 130S1120 200 1260 120"/>
+    <path d="M-50 250C230 140 530 360 850 250S1120 320 1260 240"/>
+    <path d="M-50 370C230 260 530 480 850 370S1120 440 1260 360"/>
+    <path d="M-50 490C230 380 530 600 850 490S1120 560 1260 480"/>
+  </g>
+  <rect x="72" y="76" width="48" height="5" fill="#f2a33c"/>
+  <text x="72" y="139" fill="#f2a33c" font-family="Consolas, monospace" font-size="21" letter-spacing="2">SOFTWARE ENGINEERING STUDENT</text>
+  <text x="66" y="270" fill="#e9eef4" font-family="Arial, sans-serif" font-size="104" font-weight="bold">Sulaiman</text>
+  <text x="66" y="376" fill="#e9eef4" font-family="Arial, sans-serif" font-size="104" font-weight="bold">Atayi<tspan fill="#f2a33c">.</tspan></text>
+  <text x="72" y="451" fill="#b6c3d1" font-family="Arial, sans-serif" font-size="30">Backend / Cloud infrastructure / Automation</text>
+  <path d="M72 509H1128" stroke="#455363"/>
+  <text x="72" y="556" fill="#b6c3d1" font-family="Consolas, monospace" font-size="20">Dual study · NORDAKADEMIE &amp; EDEKA IT</text>
+</svg>

@@ -1,16 +1,16 @@
-# Graph Report - namialusweb  (2026-06-10)
+# Graph Report - namialusweb  (2026-10-23)
 
 ## Corpus Check
-- 31 files · ~78,214 words
+- 37 files · ~85,360 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 251 nodes · 271 edges · 30 communities (14 shown, 16 thin omitted)
-- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.84)
+- 296 nodes · 322 edges · 34 communities (19 shown, 15 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d1675f40`
+- Built from commit: `b41fbe6f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -44,6 +44,9 @@
 - [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Community 28|Community 28]]
 - [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Community 30|Community 30]]
+- [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
@@ -52,10 +55,10 @@
 4. `useScrollAnimation()` - 11 edges
 5. `Portfolio Website - Component Architecture` - 10 edges
 6. `App Component` - 10 edges
-7. `Animation System` - 8 edges
-8. `useScrollAnimation` - 7 edges
-9. `Frontend Design` - 6 edges
-10. `Responsive Behavior` - 6 edges
+7. `Portfolio content change plan` - 9 edges
+8. `Animation System` - 8 edges
+9. `useScrollAnimation` - 7 edges
+10. `Frontend Design` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Favicon Link` --references--> `Purple Gradient Logo Icon`  [EXTRACTED]
@@ -79,11 +82,11 @@
 - **CI/CD Deployment Pipeline** — workflows_deploy_build_and_push_image, workflows_deploy_deploy_it_on_vps, docker_compose_service_web [EXTRACTED 1.00]
 - **Social Media Icons Sprite** — icons_github_icon, icons_x_icon, icons_discord_icon, icons_bluesky_icon [EXTRACTED 1.00]
 
-## Communities (30 total, 16 thin omitted)
+## Communities (34 total, 15 thin omitted)
 
 ### Community 0 - "Reusable Component Library"
-Cohesion: 0.10
-Nodes (23): ProjectCard(), ProjectCardProps, SkillBadge(), SkillBadgeProps, TimelineItem(), TimelineItemProps, About(), highlights (+15 more)
+Cohesion: 0.09
+Nodes (28): ProjectCard(), ProjectCardProps, SkillBadge(), SkillBadgeProps, TimelineItem(), TimelineItemProps, About(), highlights (+20 more)
 
 ### Community 1 - "React Dependencies"
 Cohesion: 0.11
@@ -129,26 +132,42 @@ Nodes (7): computedHash, skillPath, source, sourceType, skills, frontend-design,
 Cohesion: 0.29
 Nodes (6): Design principles, Frontend Design, Ground it in the subject, More on writing in design, Process: brainstorm, explore, plan, critique, build, critique again, Restraint and self-critique
 
-### Community 28 - "Community 28"
+### Community 27 - "Community 27"
 Cohesion: 0.33
-Nodes (6): HarborWater, Hero(), RetroTerminal, useTerminalEnabled(), useWaterEnabled(), usePointerParallax()
+Nodes (5): Development, Sulaiman Atayi's portfolio, upcoming..., Updating content, Validation
+
+### Community 28 - "Community 28"
+Cohesion: 0.22
+Nodes (7): SceneBoundary, HarborWater, Hero(), RetroTerminal, useTerminalEnabled(), useWaterEnabled(), usePointerParallax()
+
+### Community 30 - "Community 30"
+Cohesion: 0.12
+Nodes (15): About and education, Completion checks for eventual implementation, Direction, Earlier experience, EDEKA experience, Facts to resolve before final copy, Featured projects, Hero and metadata (+7 more)
+
+### Community 31 - "Community 31"
+Cohesion: 0.22
+Nodes (8): 1. GitOps infrastructure platform — `argocd_platform`, 2. Shared wishlist interface — `wishList`, 3. Video and playlist link tool — `ytdownloader` (conditional), Lower priority for featured cards, Optional alternatives, Portfolio presentation, Portfolio project shortlist, Recommended featured projects
+
+### Community 32 - "Community 32"
+Cohesion: 0.50
+Nodes (3): Follow-up: confirmed public domain, Portfolio implementation notes, Verification
 
 ## Knowledge Gaps
-- **146 isolated node(s):** `PreToolUse`, `name`, `private`, `version`, `type` (+141 more)
+- **170 isolated node(s):** `PreToolUse`, `name`, `private`, `version`, `type` (+165 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `🚀 Portfolio Website - Build Complete!` connect `Project Features` to `Component Documentation`, `Design System & Tokens`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **Why does `Portfolio Website - Component Architecture` connect `Component Documentation` to `Project Features`, `Design System & Tokens`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `PreToolUse`, `name`, `private` to the rest of the system?**
-  _146 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _170 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Reusable Component Library` be split into smaller, more focused modules?**
-  _Cohesion score 0.09759759759759759 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08859357696567 - nodes in this community are weakly interconnected._
 - **Should `React Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `Build & Lint Config` be split into smaller, more focused modules?**

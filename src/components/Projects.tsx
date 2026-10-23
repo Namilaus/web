@@ -1,55 +1,19 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { ProjectCard } from './common/ProjectCard';
+import { projects } from '../data/portfolio';
 import styles from './Projects.module.css';
-
-const projects = [
-  {
-    title: 'Power BI Analytics Dashboard',
-    description: 'Automated data visualization and reporting system for operational insights',
-    tech: ['Power BI', 'Data Automation', 'SQL', 'Business Intelligence'],
-  },
-  {
-    title: 'Backend API System',
-    description: 'RESTful API built with Node.js and MySQL for data management',
-    tech: ['Node.js', 'Express', 'MySQL', 'REST API'],
-  },
-  {
-    title: 'Cloud Infrastructure Automation',
-    description: 'Infrastructure setup and configuration automation on AWS',
-    tech: ['AWS', 'Infrastructure', 'Automation', 'DevOps'],
-  },
-  {
-    title: 'Database Optimization',
-    description: 'Query optimization and database performance improvement',
-    tech: ['MySQL', 'SQL', 'Database Design', 'Performance'],
-  },
-  {
-    title: 'System Configuration Suite',
-    description: 'Automated system installation and configuration toolkit',
-    tech: ['System Admin', 'Scripting', 'Automation', 'Configuration'],
-  },
-  {
-    title: 'Full Stack Application',
-    description: 'Complete web application with frontend and backend integration',
-    tech: ['Next.js', 'React', 'Node.js', 'Database'],
-  },
-];
 
 export const Projects = () => {
   const { ref, isVisible } = useScrollAnimation();
-
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section ref={ref} id="projects" className={styles.projects}>
       <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
         <header className={styles.header}>
-          <span className={styles.record}>Rec 04 — My Work</span>
+          <span className={styles.record}>Rec 01 — My Work</span>
           <h2 className={styles.title}>Featured Projects</h2>
           <p className={styles.subtitle}>
-            Placeholder projects showcasing my technical expertise
+            Selected personal projects in infrastructure, web development, and automation.
           </p>
         </header>
 
@@ -60,10 +24,8 @@ export const Projects = () => {
         </div>
 
         <div className={styles.cta}>
-          <p className={styles.ctaText}>Have an exciting project in mind?</p>
-          <button className={styles.button} onClick={scrollToContact}>
-            Let's Work Together
-          </button>
+          <p className={styles.ctaText}>Curious about a project or a technical decision?</p>
+          <a className={styles.button} href="#contact">Let's Talk</a>
         </div>
       </div>
     </section>

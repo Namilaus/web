@@ -10,19 +10,22 @@ import { Footer } from './components/Footer';
 import './App.css';
 
 function App() {
-  const { theme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   return (
-    <div data-theme={theme}>
-      <Navigation />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
+    <>
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Navigation theme={theme} toggleTheme={toggleTheme} />
+      <main id="main" tabIndex={-1}>
+        <Hero />
+        <Projects />
+        <Experience />
+        <About />
+        <Skills />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
